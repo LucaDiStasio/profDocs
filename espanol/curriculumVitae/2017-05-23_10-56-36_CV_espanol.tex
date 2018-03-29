@@ -1,3 +1,52 @@
+%----------------------------------------------%
+%        BASIC DOCUMENT DECLARATIONS           %
+%----------------------------------------------%
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+%----------------------------------------------%
+%              PACKAGES                        %
+%----------------------------------------------%
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage{ wasysym }
+
+%----------------------------------------------%
+%     NAME AND CONTACT INFORMATION SECTION     %
+%----------------------------------------------%
+
+\firstname{Luca} % Your first name
+\familyname{Di Stasio} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+%\address{Funkwiesenstrasse, 100}{8050, Z\"urich, Switzerland}
+%\mobile{392 1673742}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+%\email{luca.distasio@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[70pt][0.4pt]{pictures/Luca_Di_Stasio_photo_reduced} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%--------------------------------------------------------------------------------------------------%%
+%%------------------------------------ DOCUMENT BEGINS ---------------------------------------------%%
+%%--------------------------------------------------------------------------------------------------%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
 
 \makecvtitle % Print the CV title
 
@@ -336,7 +385,7 @@ Universidad Politécnica, Xi ' an, China--Universidad de Chongqing, Chongqing, C
 \section{Para saber más acerca de mí}
 
 \cvitem{Follow}{the QR code}
-\cvitem{}{\includegraphics[width=0.2\textwidth]{pictures/qrcode.eps}}
+\cvitem{}{\includegraphics[width=0.2\textwidth]{pictures/qrcode.png}}
 \cvitem{or click}{on the link to know more \href{http://www.lucadistasioengineering.com/}{\textit{about me.}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -347,3 +396,4 @@ Universidad Politécnica, Xi ' an, China--Universidad de Chongqing, Chongqing, C
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\end{document}
