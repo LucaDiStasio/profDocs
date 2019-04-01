@@ -1,176 +1,300 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%                                  CURRICULUM VITAE                                
-%                                    ENGLISH VERSION                                  
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Copyright (c) 2015 - 2019 Luca Di Stasio
-% Author: Luca Di Stasio <luca.distasio@gmail.com>
-%                                  <luca.distasio@ingpec.eu>
+% FortySecondsCV LaTeX template
+% Copyright © 2019 René Wirnata <rene.wirnata@pandascience.net>
+% Licensed under the 3-Clause BSD License. See LICENSE file for details.
 %
-% This program is free software: you can redistribute it and/or modify
-% it under the terms of the GNU General Public License as published by
-% the Free Software Foundation, either version 3 of the License, or
-% (at your option) any later version.
-%
-% This program is distributed in the hope that it will be useful,
-% but WITHOUT ANY WARRANTY; without even the implied warranty of
-% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-% GNU General Public License for more details.
-%
-% You should have received a copy of the GNU General Public License
-% along with this program.  If not, see <http://www.gnu.org/licenses/>.
+% Attributions
+% ------------
+% * fortysecondscv is based on the twentysecondcv class by Carmine Spagnuolo 
+%   (cspagnuolo@unisa.it), released under the MIT license and available under
+%   https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex
+% * further attributions are indicated immediately before corresponding code
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%                             ADDITIONAL PACKAGES
+%-------------------------------------------------------------------------------
+\documentclass[
+  a4paper, 
+%   showframes,
+%   maincolor=cvgreen,
+%   sectioncolor=red,
+%   subsectioncolor=orange
+%   sidebarwidth=0.4\paperwidth,
+%   topbottommargin=0.03\paperheight,
+%   leftrightmargin=20pt
+]{fortysecondscv}
 
-\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+% improve word spacing and hyphenation
+\usepackage{microtype}
+\usepackage{ragged2e}
 
-%----------------------------------------------------------------------------------------
-%	 PERSONAL INFORMATION
-%----------------------------------------------------------------------------------------
+% take care of proper font encoding
+\ifxetex
+	\usepackage{fontspec}
+	\defaultfontfeatures{Ligatures=TeX}
+% \newfontfamily\headingfont[Path = fonts/]{segoeuib.ttf} % local font
+\else
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+% \usepackage[sfdefault]{noto} % use noto google font
+\fi
 
-% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+% enable mathematical syntax for some symbols like \varnothing
+\usepackage{amssymb}
 
-\profilepic{Luca_Di_Stasio_photo_reduced.jpeg} % Profile picture
+% bubble diagram configuration
+\usepackage{smartdiagram}
+\smartdiagramset{
+  % defaut font size is \large, so adjust to harmonize with sidebar layout
+  bubble center node font = \footnotesize,
+  bubble node font = \footnotesize,
+  % default: 4cm/2.5cm; make minimum diameter relative to sidebar size
+  bubble center node size = 0.4\sidebartextwidth,
+  bubble node size = 0.25\sidebartextwidth,
+  distance center/other bubbles = 1.5em,
+  % set center bubble color
+  bubble center node color = maincolor!70,
+  % define the list of colors usable in the diagram
+  set color list = {maincolor!10, maincolor!40,
+  maincolor!20, maincolor!60, maincolor!35},
+  % sets the opacity at which the bubbles are shown
+  bubble fill opacity = 0.8,
+}
 
-\cvname{Luca Di Stasio} % Your name
-\cvjobtitle{Early Stage Researcher} % Job title/career
 
-\cvdate{April 19$^{th}$, 1988} % Date of birth
-\cvaddress{Stormv\"agen 299\newline 97643 Lule\aa, Sweden} % Short address/location, use \newline if more than 1 line is required
-\cvnumberphone{+46 76 453 21 60} % Phone number
-\cvsite{\href{https://www.linkedin.com/in/lucadistasio}{\textit{Linkedin profile}}} % Personal website
-\cvmail{luca.distasio@gmail.com} % Email address
+%-------------------------------------------------------------------------------
+%                            PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+% profile picture
+\cvprofilepic{Luca_Di_Stasio_photo_reduced.jpeg}
+% your name
+\cvname{Luca Di Stasio}
+% job title/career
+\cvjobtitle{Early Stage Researcher}
+% date of birth
+\cvbirthday{April 19$^{th}$, 1988}
+% short address/location, use \newline if more than 1 line is required
+\cvaddress{Stormv\"agen 299\newline SE-97643 Lule\aa, Sweden}
+% phone number
+\cvphone{+46 76 453 21 60}
+% personal website
+%\cvsite{https://pandascience.net}
+% email address
+\cvmail{luca.distasio@gmail.com}
+\cvmailprof{luca.distasio@ingpec.eu}
+\linkedin{https://www.linkedin.com/in/lucadistasio/}{My Linkedin}
+\researchgate{https://www.researchgate.net/profile/Luca\_Di\_Stasio2}{My Researchgate}
+\github{https://github.com/LucaDiStasio}{My Github}
 
-%----------------------------------------------------------------------------------------
+% add additional information
+% \newcommand{\additional}{some more?}
 
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 1st PAGE
+%-------------------------------------------------------------------------------
+% overwrite default icons and order of personal information
+% \renewcommand{\personaltable}{%
+% 	\begin{personal}[0.8em]
+% 		\circleicon{\faKey}      & \cvkey  \\
+% 		\circleicon{\faAt}       & \cvmail \\
+% 		\circleicon{\faGlobe}    & \cvsite \\
+% 		\circleicon{\faPhone}    & \cvphone \\
+% 		\circleicon{\faEnvelope} & \cvaddress \\
+% 		\circleicon{\faInfo}     & \cvbirthday \\
+% 		% add another line
+% 		\circleicon{\faQuestion} & \additional
+% 	\end{personal}
+% }
+
+% add more profile sections to sidebar on first page
+\addtofrontsidebar{
+
+
+	\profilesection{Computer Skills}
+		\skill{\faCode}{Sleeping almost all day}
+		\skill{\faSitemap}{Eating a lot bamboo sprouts}
+		\skill{\faGraduationCap}{Relaxing rest of the day}
+
+%	\profilesection{Soft Skills}
+%		\pointskill{\faHome}{Looking Cute}{5}
+% 			\skill[1.8em]{\faCompress}{No need to specify further}
+%		\pointskill{\faTasks}{Being Black \& White}{5}
+% 			\skill[1.8em]{\faCompress}{Having white parts}
+% 			\skill[1.8em]{\faCompress}{Having black parts}
+%		\pointskill{\faChild}{Chillin' hard}{4}
+% 			\skill[1.8em]{\faCompress}{On a tree}
+% 			\skill[1.8em]{\faCompress}{On the grass}
+%		\pointskill{\faComment}{Being an Idol}{3}
+% 			\skill[1.8em]{\faCompress}{Kung Fu Panda 1-3}
+% 			\skill[1.8em]{\faCompress}{WoW: Mists of Pandaria}
+}
+
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 2nd PAGE
+%-------------------------------------------------------------------------------
+\addtobacksidebar{
+	\profilesection{Languages}
+           \skill{\faLanguage}{Italian (mother tongue)}
+		\pointskill[1.8em]{}{Speaking}{5}
+		\pointskill[1.8em]{}{Writing}{5}
+                     \pointskill[1.8em]{}{Reading}{5}
+  	\skill{\faLanguage}{English (fluent)}
+		\pointskill[1.8em]{}{Speaking}{5}
+		\pointskill[1.8em]{}{Writing}{5}
+                     \pointskill[1.8em]{}{Reading}{5}
+  	\skill{\faLanguage}{French (fluent)}
+		\pointskill[1.8em]{}{Speaking}{4}
+		\pointskill[1.8em]{}{Writing}{4}
+                     \pointskill[1.8em]{}{Reading}{5}
+           \skill{\faLanguage}{Spanish (fluent)}
+		\pointskill[1.8em]{}{Speaking}{4}
+		\pointskill[1.8em]{}{Writing}{4}
+                     \pointskill[1.8em]{}{Reading}{5}
+  	\skill{\faLanguage}{German (satisfactory)}
+		\pointskill[1.8em]{}{Speaking}{2}
+		\pointskill[1.8em]{}{Writing}{3}
+                     \pointskill[1.8em]{}{Reading}{3}
+  	\skill{\faLanguage}{Swedish (rudimentary)}
+		\pointskill[1.8em]{}{Speaking}{1}
+		\pointskill[1.8em]{}{Writing}{1}
+                     \pointskill[1.8em]{}{Reading}{2}
+           \skill{\faLanguage}{Russian (rudimentary)}
+		\pointskill[1.8em]{}{Speaking}{1}
+		\pointskill[1.8em]{}{Writing}{1}
+                     \pointskill[1.8em]{}{Reading}{2}
+%	\profilesection{Memberships}
+%	\begin{memberships}
+%		\membership{pics/logo.png}{PandaScience.net}
+%		\membership{pics/logo.png}{Here's some longer text spanning over more than
+%			only one line}
+%	\end{memberships}
+
+}
+
+
+%-------------------------------------------------------------------------------
+%                         TABLE ENTRIES RIGHT COLUMN
+%-------------------------------------------------------------------------------
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	 ABOUT ME
-%----------------------------------------------------------------------------------------
+\makefrontsidebar
 
-\aboutme{Alice is a sensible prepubescent girl from a wealthy English family who finds herself in a strange world ruled by imagination and fantasy. Alice feels comfortable with her identity and has a strong sense that her environment is comprised of clear, logical, and consistent rules and features. Alice's familiarity with the world has led one critic to describe her as a "disembodied intellect". Alice displays great curiosity and attempts to fit her diverse experiences into a clear understanding of the world.} % To have no About Me section, just remove all the text and leave \aboutme{}
+\cvsection{Work Experience}
+\subsection{Postgraduate Training}
+\begin{cvtable}
+	\cvitem{currently}{CEO The Panda Way}{Start Up}{Chief executive officer, Head
+	developer and yoga ambassador of 'The Panda Way' - A company for pandas from
+	pandas that invents, advertises and distributes panda-related content all
+	over the world.}
+	\cvitem{2015 -- 2018}{Panda Scientist}{Bamboo University}{
+		Reasearching the impact of adequate bamboo nutrition compared to
+		conventional feeding methods.}
+	\cvitem{2010 -- 2015}{Bamboo Broker}{Stock Exchange}{Continuously achieving 
+		better bamboo bangs for the buck.}
+\end{cvtable}
 
-%----------------------------------------------------------------------------------------
-%	 SKILLS
-%----------------------------------------------------------------------------------------
 
-% Skill bar section, each skill must have a value between 0 an 6 (float)
-\skills{{pursuer of rabbits/5.8},{good manners/4},{outgoing/4.3},{polite/4},{Java/0.01}}
+\cvsection{Education}
+\subsection{Postgraduate Training}
+\begin{cvtable}
+	\cvitem{2009 -- 2010}{Post-Doc Panda Studies}{Panda Academy}
+		{In-depth studies on the impact of bamboo nutrition for young pandas and
+		its relation to relaxing, sleeping and snoozing parts of the day.}
+	\cvitem{2008 -- 2009}{Research Stay Europe}{European Panda Labs}
+		{Spending one year abroad teaching european panda facilities about the
+		newest findings and research in the field of asian rice hat covers and
+		applications for bamboo as a material.}
+\end{cvtable}
 
-%------------------------------------------------
 
-% Skill text section, each skill must have a value between 0 an 6
-\skillstext{{lovely/4},{narcissistic/3}}
+\subsection{Study}
+\begin{cvtable}
+	\cvitem{2006 -- 2008}{Master Studies Panda Science}{Panda Academy}
+		{Focus: Advanced rice hat studies and nouveau rain-reflecting cover
+		materials.}
+	\cvitem{}{Master Theses ($\varnothing\,	1,0$)}{Asian Rice Hat Institute}
+		{Impact on solar radiation onto rice hat cover materials with special
+		attention to water resistance.}
+	\cvitem{2003 -- 2006}{Bachelor Studies PandaScience}{Panda Academy}
+		{Focus: Bamboo morphology and its usage in different craftmanships.}
+	\cvitem{}{Bachelor Theses ($\varnothing\,	1,0$)}{Bamboo Institute}
+		{The bambo flute: An underestimated instrument in orchestras?}
+\end{cvtable}
 
-%----------------------------------------------------------------------------------------
+\cvsection{Publications}
+\begin{cvtable}
+	\cvitem{2010}{Cooking: 100 recipes for lazy Pandas}{Panda's
+	Culinary World}{}
+	\cvitem{2005}{Pandastasia}{Bamboo Books Assoc.}{}
+	\cvitem{2000}{The Panda Way - A guide for mastering everyday life as a Panda}
+		{Young Panda's Journal}{}
+\end{cvtable}
 
-\makeprofile % Print the sidebar
 
-%----------------------------------------------------------------------------------------
-%	 INTERESTS
-%----------------------------------------------------------------------------------------
+\cvsection{Awards}
+\begin{cvtable}
+	\cvitem{2010 -- now}{Panda of the Year}{Panda World Forum}{}
+	\cvitem{2005 -- now}{Face of World Wide Fund for Nature}{WWF}{}
+	\cvitem{2000}{Winner of Bamboo Sprouts Eating Contest}{Bamboo Society}{}
+\end{cvtable}
 
-\section{Interests}
 
-The heroine and the dreamer of Wonderland; Alice is the principal character.
+\cvsection{Extra-Curricular Activities}
+\begin{cvtable}
+	\cvitemshort{Relaxing}{Master the fine art of relaxing everywhere}
+	\cvitemshort{Music}{Playing the bamboo flute in the 1st Panda Orchestra}
+	\cvitemshort{Education}{Teaching young pandas to be more panda-like}
+\end{cvtable}
 
-%----------------------------------------------------------------------------------------
-%	 EDUCATION
-%----------------------------------------------------------------------------------------
 
-\section{Education}
+\newpage
+\makebacksidebar
 
-\begin{twenty} % Environment for a list with descriptions
-	\twentyitem{since 1865}{Ph.D. {\normalfont candidate in Computer Science}}{Wonderland}{\emph{A Quantified Theory of Social Cohesion.}}
-	\twentyitem{1863-1865}{M.Sc. magna cum laude}{Wonderland}{Majoring in Computer Science}
-	\twentyitem{1861-1863}{B.Sc. magna cum laude}{Wonderland}{Majoring in Computer Science}
-	\twentyitem{1856-1861}{High school}{Wonderland}{Specializing in mathematics and physics.}
-	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
-\end{twenty}
 
-\begin{twenty}
-\twentyitem{1234}{lalal}{lalala}{lalalalalalla}
-\end{twenty}
+\cvsection{section}
+\subsection{Subsection}
+\begin{cvtable}
+	\cvitem{<dates>}{<cv-item title>}{<location>}{<optional: description>}
+\end{cvtable}
 
-%----------------------------------------------------------------------------------------
-%	 PUBLICATIONS
-%----------------------------------------------------------------------------------------
+\cvsection{cvitem}
+\subsection{Multi-line with longer description}
+\begin{cvtable}
+	\cvitem{date}{Description}{location}{Some longer and more detailed 
+		description, that takes two lines	of space instead of only one.}
+	\cvitem{date}{Description}{location}{Some longer and more detailed 
+		description, that takes two lines	of space instead of only one.}
+	\cvitem{date}{Description}{location}{Some longer and more detailed 
+		description, that takes two lines	of space instead of only one.}
+\end{cvtable}
 
-\section{Publications}
+\subsection{One-line without description}
+\begin{cvtable}
+	\cvitem{Award}{One-line description}{Sponsor}{}
+	\cvitem{Award}{One-line description}{Sponsor}{}
+	\cvitem{Award}{One-line description}{Sponsor}{}
+\end{cvtable}
 
-\begin{twentyshort} % Environment for a short list with no descriptions
-	\twentyitemshort{1865}{Chapter One, Down the Rabbit Hole.}
-	\twentyitemshort{1865}{Chapter Two, The Pool of Tears.}
-	\twentyitemshort{1865}{Chapter Three,  The Caucus Race and a Long Tale.}
-	\twentyitemshort{1865}{Chapter Four,  The Rabbit Sends a Little Bill.}
-	\twentyitemshort{1865}{Chapter Five,  Advice from a Caterpillar.}
-	%\twentyitemshort{<dates>}{<title/description>}
-\end{twentyshort}
+\cvsection{cvitemshort}
+\subsection{One-line}
+\begin{cvtable}
+	\cvitemshort{Key}{Some further description}
+	\cvitemshort{Key}{Some further description}
+	\cvitemshort{Key}{Some further description}
+\end{cvtable}
 
-%----------------------------------------------------------------------------------------
-%	 AWARDS
-%----------------------------------------------------------------------------------------
+\subsection{Multi-line with longer description}
+\begin{cvtable}
+	\cvitemshort{Key}{Some further description. Can fill even more than
+		only one single line while still keeping the correct indendation level.}
+	\cvitemshort{Key}{Some further description. Can fill even more than
+		only one single line while still keeping the correct indendation level.}
+	\cvitemshort{Key}{Some further description. Can fill even more than
+		only one single line while still keeping the correct indendation level.}
+\end{cvtable}
 
-\section{Awards}
+\cvsignature
 
-\begin{twentyshort} % Environment for a short list with no descriptions
-	\twentyitemshort{1987}{All-Time Best Fantasy Novel.}
-	\twentyitemshort{1998}{All-Time Best Fantasy Novel before 1990.}
-	%\twentyitemshort{<dates>}{<title/description>}
-\end{twentyshort}
-
-%----------------------------------------------------------------------------------------
-%	 EXPERIENCE
-%----------------------------------------------------------------------------------------
-
-\section{Experience}
-
-\begin{twenty} % Environment for a list with descriptions
-	\twentyitem{1900}{Alice in Wonderland-The Circra (1900's) Silent Film.}{Film}{The first Alice on film was over a hundred years ago.}
-	\twentyitem{1933}{Alice in Wonderland 1933 version.}{Film}{This film stars Ethel griffies and Charlotte Henry. It was a box office flop when it was released.}
-	\twentyitem{1951}{Disney Film.}{Film}{Walt Disney brings Lewis Carroll's fantasy story to life in this well done animated classic. Even though many elements from the book were dropped, such as the duchess with the baby pig and mock turtle, this version is without a doubt the most famous Alice adaption made.}
-	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
-\end{twenty}
-
-%----------------------------------------------------------------------------------------
-%	 OTHER INFORMATION
-%----------------------------------------------------------------------------------------
-
-\section{Other information}
-
-\subsection{Review}
-
-Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
-
-%----------------------------------------------------------------------------------------
-%	 SECOND PAGE EXAMPLE
-%----------------------------------------------------------------------------------------
-
-%\newpage % Start a new page
-
-%\makeprofile % Print the sidebar
-
-%\section{Other information}
-
-%\subsection{Review}
-
-%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
-
-%\section{Other information}
-
-%\subsection{Review}
-
-%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
-
-%----------------------------------------------------------------------------------------
-
-\end{document}
+\end{document} 
