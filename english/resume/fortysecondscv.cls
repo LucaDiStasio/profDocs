@@ -61,7 +61,7 @@
 \newlength\leftrightmargin%
 \newlength\sidebartextwidth
 % default values
-\setlength{\sidebarwidth}{0.34\paperwidth}
+\setlength{\sidebarwidth}{0.35\paperwidth}
 \setlength{\topbottommargin}{0.02\paperheight}
 \setlength{\leftrightmargin}{0.02\paperwidth}
 % user overwrites
@@ -176,11 +176,10 @@
 
 % abuse subsubsection as profilesection in left column
 \newcommand*{\profilesection}[1]{\subsubsection*{#1}}
-\titleformat{\subsubsection}
-	{\color{pseccolor}\normalfont\huge}{}{0pt}{\color{pseccolor}\sectionline}
+\titleformat{\subsubsection}{\color{pseccolor}\normalfont\bfseries\LARGE}{}{0pt}{\color{pseccolor}\sectionline}
 % set spaces before and after profilesections: <left><before><after>
 % "starred version kills the indentation of the paragraph following the title"
-\titlespacing*{\subsubsection}{0pt}{1ex}{1ex}
+\titlespacing*{\subsubsection}{0pt}{0.65ex}{0.75ex}
 
 
 %-------------------------------------------------------------------------------
@@ -191,6 +190,9 @@
 \newcommand*{\cvname}[1]{\renewcommand{\cvname}{#1}}
 \newcommand*{\cvjobtitle}[1]{\renewcommand{\cvjobtitle}{#1}}
 \newcommand*{\cvbirthday}[1]{\renewcommand{\cvbirthday}{#1}}
+\newcommand*{\cvnation}[1]{\renewcommand{\cvnation}{#1}}
+\newcommand*{\cvcert}[1]{\renewcommand{\cvcert}{#1}}
+\newcommand*{\cvdlic}[1]{\renewcommand{\cvdlic}{#1}}
 \newcommand*{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
 \newcommand*{\cvphone}[1]{\renewcommand{\cvphone}{#1}}
 \newcommand*{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
@@ -213,21 +215,21 @@
 	\begin{figure}\centering
 		% see TikZ/pgf v3.1.1 manual §2.11 (clipping), §14.5 (rounded corners),
 		% §12 (scopes), §13.2 (coordinate systems)
-		\begin{tikzpicture}[x=0.8\sidebartextwidth, y=0.8\sidebartextwidth]
+		\begin{tikzpicture}[x=0.8\sidebartextwidth, y=0.5\sidebartextwidth]
 			\begin{scope}
 			\path[clip]
-				(0, 0) [sharp corners] -- 
+				(0, 0) [rounded corners=0.15\sidebartextwidth] -- 
 				(0, 1) [rounded corners=0.15\sidebartextwidth] -- 
-				(1, 1) [sharp corners] --
+				(1, 1) [rounded corners=0.15\sidebartextwidth] --
 				(1, 0) [rounded corners=0.15\sidebartextwidth] -- cycle;
 			\node[anchor=south west, inner sep=0pt] (profilepic) at (0, 0)
 				{\includegraphics[width=0.8\sidebartextwidth]{\cvprofilepic}};
 			\end{scope}
 			\begin{scope}
 			\draw	[line width=0.02\sidebartextwidth, color=iconcolor]
-				(0, 0) [sharp corners] -- 
+				(0, 0)[rounded corners=0.15\sidebartextwidth] -- 
 				(0, 1) [rounded corners=0.15\sidebartextwidth] -- 
-				(1, 1) [sharp corners] --
+				(1, 1) [rounded corners=0.15\sidebartextwidth] --
 				(1, 0) [rounded corners=0.15\sidebartextwidth] -- cycle;
 			\end{scope}
 		\end{tikzpicture}
@@ -247,15 +249,17 @@
 % table with personal information on top sidebar on first page
 \newcommand{\personaltable}{%
 	\begin{personal}[0.6em]
-		\circleicon{\faInfo}     & \cvbirthday \\
+		\circleicon{\faCertificate}     & \cvcert \\
+		\circleicon{\faCar}     & \cvdlic \\
+		\circleicon{\faFlag}     & \cvnation \\
 		\circleicon{\faEnvelope} & \cvaddress \\
 		\circleicon{\faPhone}    & \cvphone \\
-		%\circleicon{\faGlobe}    & \cvsite \\
 		\circleicon{\faAt}       & \cvmail \\
-                     \circleicon{\faAt}       & \cvmailprof \\
-                     \circleicon{\faUniversity}     & \researchgate \\
-                     \circleicon{\faLinkedin}       & \linkedin \\
-                     \circleicon{\faGithub}       & \github \\
+                     %\circleicon{\faAt}       & \cvmailprof \\
+                     \circleicon{\faGlobe}    & \cvsite\\
+                     %\circleicon{\faUniversity}     & \researchgate \\
+                     %\circleicon{\faLinkedin}       & \linkedin \\
+                     %\circleicon{\faGithub}       & \github \\
 	\end{personal}
 }
 
@@ -448,7 +452,7 @@
 \newcommand{\makefrontsidebar}{%
 	\begin{sidebar}
 		% most sidebar commands end with \par; increase space between them
-		\setlength{\parskip}{1ex}
+		\setlength{\parskip}{0.85ex}
 
 		% insert profile picture
 		\profileroundedcorners
@@ -469,10 +473,9 @@
 \newcommand{\makebacksidebar}{%
  	\begin{sidebar}
 		% begin with name instead of picture
-		\nameandjob
-		
+		\vspace{-1ex}		
 		% make sure there is no space at top, but after cvjob
-		\setlength{\parskip}{1ex}
+		\setlength{\parskip}{0.85ex}
 
 		% user definitions
 		\backsidebar
