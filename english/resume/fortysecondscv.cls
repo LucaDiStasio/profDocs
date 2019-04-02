@@ -205,9 +205,9 @@
 
 % TODO find a cleaner solution for consistent spacing
 \newcommand{\nameandjob}{%
-	{\Huge\color{maincolor}\cvname}\par%
+	{\Huge\color{maincolor}\bfseries\cvname}\par%
 	\setlength{\parskip}{2ex}
-	{\Large\color{black!80}\cvjobtitle}\par%
+	{\Large\color{black!80}\bfseries\cvjobtitle}\par%
 	\setlength{\parskip}{1ex}
 }
 
@@ -218,19 +218,18 @@
 		\begin{tikzpicture}[x=0.8\sidebartextwidth, y=0.5\sidebartextwidth]
 			\begin{scope}
 			\path[clip]
-				(0, 0) [rounded corners=0.15\sidebartextwidth] -- 
-				(0, 1) [rounded corners=0.15\sidebartextwidth] -- 
-				(1, 1) [rounded corners=0.15\sidebartextwidth] --
-				(1, 0) [rounded corners=0.15\sidebartextwidth] -- cycle;
-			\node[anchor=south west, inner sep=0pt] (profilepic) at (0, 0)
-				{\includegraphics[width=0.8\sidebartextwidth]{\cvprofilepic}};
+				(0, 0) [rounded corners=0.05\sidebartextwidth] -- 
+				(0, 1) [rounded corners=0.05\sidebartextwidth] -- 
+				(1, 1) [rounded corners=0.05\sidebartextwidth] --
+				(1, 0) [rounded corners=0.05\sidebartextwidth] -- cycle;
+			\node[anchor=south west, inner sep=0pt] (profilepic) at (-0.01, -0.6){\includegraphics[width=0.8\sidebartextwidth]{\cvprofilepic}};
 			\end{scope}
 			\begin{scope}
 			\draw	[line width=0.02\sidebartextwidth, color=iconcolor]
-				(0, 0)[rounded corners=0.15\sidebartextwidth] -- 
-				(0, 1) [rounded corners=0.15\sidebartextwidth] -- 
-				(1, 1) [rounded corners=0.15\sidebartextwidth] --
-				(1, 0) [rounded corners=0.15\sidebartextwidth] -- cycle;
+				(0, 0)[rounded corners=0.05\sidebartextwidth] -- 
+				(0, 1) [rounded corners=0.05\sidebartextwidth] -- 
+				(1, 1) [rounded corners=0.05\sidebartextwidth] --
+				(1, 0) [rounded corners=0.05\sidebartextwidth] -- cycle;
 			\end{scope}
 		\end{tikzpicture}
 	\end{figure}
