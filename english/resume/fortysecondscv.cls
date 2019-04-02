@@ -168,11 +168,13 @@
 % \titleformat{<command>}[<shape>]{<format>}{<label>}{<sep>}{<before>}[<after>]
 \newcommand*{\cvsection}[1]{\section*{#1}}
 \titleformat{\section}%
-	{\color{sectioncolor}\normalfont\bfseries\LARGE}{}{0pt}{}
+	{\color{pseccolor}\normalfont\bfseries\LARGE}{}{0pt}{}
+\titlespacing{\section}{0pt}{0.65ex}{0.75ex}
 
 % grey subsection style for right column
 \titleformat{\subsection}%
-	{\color{subsectioncolor}\normalfont\large}{}{0pt}{}
+	{\color{pseccolor}\normalfont\large}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{0.65ex}{0.75ex}
 
 % abuse subsubsection as profilesection in left column
 \newcommand*{\profilesection}[1]{\subsubsection*{#1}}
@@ -407,7 +409,7 @@
 
 \newcommand{\cvsignature}{
 	\vfill
-	{\large\bfseries\color{maincolor!70}\today \hfill \cvname}
+	{\large\bfseries\color{maincolor}\today \hfill \cvname}
 }
 
 
