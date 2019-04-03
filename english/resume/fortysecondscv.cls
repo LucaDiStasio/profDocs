@@ -507,8 +507,8 @@
 % or, if description is empty:
 % | <date>         <title>       \hfill  <location>  |
 \newcommand{\cvitem}[4]{%
-	\parbox[t]{0.125\textwidth}{\raggedright #1} &%
-	\parbox[t]{0.875\textwidth}{%
+	\parbox[t]{0.12\textwidth}{\raggedright #1} &%
+	\parbox[t]{0.88\textwidth}{%
 		\if\relax\detokenize{#4}\relax%
 			\parbox[t]{\linewidth-\widthof{#3}-1em}{\raggedright #2}%
   		\hfill {\footnotesize#3}%
