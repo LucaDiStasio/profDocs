@@ -217,14 +217,14 @@
 	\begin{figure}\centering
 		% see TikZ/pgf v3.1.1 manual §2.11 (clipping), §14.5 (rounded corners),
 		% §12 (scopes), §13.2 (coordinate systems)
-		\begin{tikzpicture}[x=0.8\sidebartextwidth, y=0.5\sidebartextwidth]
+		\begin{tikzpicture}[x=0.5\sidebartextwidth, y=0.5\sidebartextwidth]
 			\begin{scope}
 			\path[clip]
 				(0, 0) [rounded corners=0.05\sidebartextwidth] -- 
 				(0, 1) [rounded corners=0.05\sidebartextwidth] -- 
 				(1, 1) [rounded corners=0.05\sidebartextwidth] --
 				(1, 0) [rounded corners=0.05\sidebartextwidth] -- cycle;
-			\node[anchor=south west, inner sep=0pt] (profilepic) at (-0.01, -0.6){\includegraphics[width=0.8\sidebartextwidth]{\cvprofilepic}};
+			\node[anchor=south west, inner sep=0pt] (profilepic) at (-0.9, -0.75){\includegraphics[width=1.5\sidebartextwidth]{\cvprofilepic}};
 			\end{scope}
 			\begin{scope}
 			\draw	[line width=0.02\sidebartextwidth, color=iconcolor]
@@ -409,7 +409,7 @@
 
 \newcommand{\cvsignature}{
 	\vfill
-	{\large\bfseries\color{maincolor}\today \hfill \cvname}
+	{\large\bfseries\color{maincolor}\hfill\today}
 }
 
 
