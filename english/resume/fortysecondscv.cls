@@ -253,7 +253,7 @@
 		\circleicon{\faCertificate}     & \cvcert \\
 		\circleicon{\faCar}     & \cvdlic \\
 		\circleicon{\faFlag}     & \cvnation \\
-		\circleicon{\faSend} & \cvaddress \\
+		\circleicon{\faHome} & \cvaddress \\
 		\circleicon{\faPhone}    & \cvphone \\
 		\circleicon{\faAt}       & \cvmail \\
                      %\circleicon{\faAt}       & \cvmailprof \\
@@ -447,8 +447,10 @@
 % default: empty sidebar
 \newcommand{\frontsidebar}{}
 \newcommand{\backsidebar}{}
+\newcommand{\thirdsidebar}{}
 \newcommand{\addtofrontsidebar}[1]{\apptocmd{\frontsidebar}{#1}{}{}}
 \newcommand{\addtobacksidebar}[1]{\apptocmd{\backsidebar}{#1}{}{}}
+\newcommand{\addtothirdsidebar}[1]{\apptocmd{\thirdsidebar}{#1}{}{}}
 
 \newcommand{\makefrontsidebar}{%
 	\begin{sidebar}
@@ -480,6 +482,18 @@
 
 		% user definitions
 		\backsidebar
+	\end{sidebar}
+}
+
+\newcommand{\makethirdsidebar}{%
+ 	\begin{sidebar}
+		% begin with name instead of picture
+		\vspace{-1ex}		
+		% make sure there is no space at top, but after cvjob
+		\setlength{\parskip}{0.85ex}
+
+		% user definitions
+		\thirdsidebar
 	\end{sidebar}
 }
 
