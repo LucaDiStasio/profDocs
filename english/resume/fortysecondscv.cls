@@ -253,7 +253,7 @@
 		\circleicon{\faCertificate}     & \cvcert \\
 		\circleicon{\faCar}     & \cvdlic \\
 		\circleicon{\faFlag}     & \cvnation \\
-		\circleicon{\faEnvelope} & \cvaddress \\
+		\circleicon{\faSend} & \cvaddress \\
 		\circleicon{\faPhone}    & \cvphone \\
 		\circleicon{\faAt}       & \cvmail \\
                      %\circleicon{\faAt}       & \cvmailprof \\
