@@ -35,6 +35,7 @@
 	nofoot,
 	nomarginpar,
 ]{geometry}
+\RequirePackage{datetime}
 
 % pre-define some colors the user can choose from
 \definecolor{cvblue}{HTML}{0E5484}
@@ -407,9 +408,11 @@
     \end{tikzpicture}\par
 }
 
+\newdateformat{monthdayyeardate}{\monthname[\THEMONTH]~\THEDAY, \THEYEAR}
+
 \newcommand{\cvsignature}{
 	\vfill
-	{\large\bfseries\color{maincolor}\hfill\today}
+	{\color{black}\hfill\monthdayyeardate\today}
 }
 
 

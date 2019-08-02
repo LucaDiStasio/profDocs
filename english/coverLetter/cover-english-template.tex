@@ -61,6 +61,7 @@
   bubble fill opacity = 0.8,
 }
 
+\usepackage{datetime}
 \usepackage{lipsum}
 
 %-------------------------------------------------------------------------------
@@ -128,6 +129,15 @@
 
 }
 
+%\newdateformat{monthdayyeardate}{\monthname[\THEMONTH]~\THEDAY, \THEYEAR}%
+
+%-------------------------------------------------------------------------------
+%                                   SPECIFIERS
+%-------------------------------------------------------------------------------
+\def\expertise{STI CAZZI}
+\def\position{MY DREAM JOB}
+\def\company{A COMPANY THAT PAYS WELL}
+\def\reference{ (REF\#)}
 
 %-------------------------------------------------------------------------------
 %                         TABLE ENTRIES RIGHT COLUMN
@@ -136,11 +146,14 @@
 
 \makefrontsidebar
 
-\cvsection{Work Experience}
-\subsection{Research \& Development}
+\cvsignature
+%\monthdayyeardate\today
+
+\subsection{\textbf{Reference:} Purpose-driven professional with expertise in \expertise\ seeking \position\ at \company\reference.}
+
 \lipsum[1-4]
 
 
-%\cvsignature
+
 
 \end{document} 
