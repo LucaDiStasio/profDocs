@@ -1,0 +1,17 @@
+%Filename: ot1fsk.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ot1fsk.fd}
+   [2006/01/25 Fontinst v1.926 font definitions for OT1/fsk.]
+
+\DeclareFontFamily{OT1}{fsk}{}
+
+\DeclareFontShape{OT1}{fsk}{m}{n}{
+   <-> fskmw7t
+}{}
+
+
+\endinput

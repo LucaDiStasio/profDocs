@@ -1,0 +1,17 @@
+%Filename: ot1fmt.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ot1fmt.fd}
+   [2006/01/25 Fontinst v1.926 font definitions for OT1/fmt.]
+
+\DeclareFontFamily{OT1}{fmt}{}
+
+\DeclareFontShape{OT1}{fmt}{m}{n}{
+   <-> fmtmdt7t
+}{}
+
+
+\endinput

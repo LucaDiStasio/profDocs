@@ -1,0 +1,17 @@
+%Filename: ts1fmt.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ts1fmt.fd}
+   [2006/01/25 Fontinst v1.926 font definitions for TS1/fmt.]
+
+\DeclareFontFamily{TS1}{fmt}{}
+
+\DeclareFontShape{TS1}{fmt}{m}{n}{
+   <-> fmtmdt8c
+}{}
+
+
+\endinput

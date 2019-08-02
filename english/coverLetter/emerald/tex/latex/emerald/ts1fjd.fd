@@ -1,0 +1,17 @@
+%Filename: ts1fjd.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ts1fjd.fd}
+   [2006/01/25 Fontinst v1.926 font definitions for TS1/fjd.]
+
+\DeclareFontFamily{TS1}{fjd}{}
+
+\DeclareFontShape{TS1}{fjd}{m}{n}{
+   <-> fjdmw8c
+}{}
+
+
+\endinput

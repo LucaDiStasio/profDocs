@@ -1,0 +1,17 @@
+%Filename: ts1fpk.fd
+%Created by: tex newfont
+%Created using fontinst v1.928
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ts1fpk.fd}
+   [2006/01/29 Fontinst v1.928 font definitions for TS1/fpk.]
+
+\DeclareFontFamily{TS1}{fpk}{}
+
+\DeclareFontShape{TS1}{fpk}{m}{n}{
+   <-> fpkmr8c
+}{}
+
+
+\endinput

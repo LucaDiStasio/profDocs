@@ -1,0 +1,31 @@
+%Filename: ot1fdc.fd
+%Created by: tex newfont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ot1fdc.fd}
+   [2006/01/26 Fontinst v1.926 font definitions for OOT1/fdc.]
+
+\DeclareFontFamily{OT1}{fdc}{}
+
+\DeclareFontShape{OT1}{fdc}{m}{n}{
+   <-> fdcmd7t
+}{}
+\DeclareFontShape{OT1}{fdc}{c}{n}{
+   <-> fdcmd7tc
+}{}
+\DeclareFontShape{OT1}{fdc}{x}{n}{
+   <-> fdcmd7te
+}{}
+\DeclareFontShape{OT1}{fdc}{b}{n}{
+   <-> fdcbd7t
+}{}
+\DeclareFontShape{OT1}{fdc}{bc}{n}{
+   <-> fdcbd7tc
+}{}
+\DeclareFontShape{OT1}{fdc}{l}{n}{
+   <-> fdcld7t
+}{}
+
+\endinput

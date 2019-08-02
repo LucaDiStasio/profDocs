@@ -1,0 +1,13 @@
+%Filename: 8rfau.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{8rfau.fd}
+   [2006/01/25 Fontinst v1.926 font definitions for 8r/fau.]
+
+\DeclareFontFamily{8r}{fau}{}
+
+
+\endinput

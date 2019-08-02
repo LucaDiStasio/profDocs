@@ -1,0 +1,20 @@
+%Filename: t1fsb.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{t1fsb.fd}
+   [2006/01/26 Fontinst v1.926 font definitions for T1/fsb.]
+
+\DeclareFontFamily{T1}{fsb}{}
+
+\DeclareFontShape{T1}{fsb}{m}{n}{
+   <-> fsbmr8t
+}{}
+\DeclareFontShape{T1}{fsb}{m}{it}{
+   <-> fsbmi8t
+}{}
+
+
+\endinput

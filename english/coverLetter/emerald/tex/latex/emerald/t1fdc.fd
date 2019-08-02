@@ -1,0 +1,31 @@
+%Filename: t1fdc.fd
+%Created by: tex newfont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{t1fdc.fd}
+   [2006/01/26 Fontinst v1.926 font definitions for T1/fdc.]
+
+\DeclareFontFamily{T1}{fdc}{}
+
+\DeclareFontShape{T1}{fdc}{m}{n}{
+   <-> fdcmd8t
+}{}
+\DeclareFontShape{T1}{fdc}{c}{n}{
+   <-> fdcmd8tc
+}{}
+\DeclareFontShape{T1}{fdc}{x}{n}{
+   <-> fdcmd8te
+}{}
+\DeclareFontShape{T1}{fdc}{b}{n}{
+   <-> fdcbd8t
+}{}
+\DeclareFontShape{T1}{fdc}{bc}{n}{
+   <-> fdcbd8tc
+}{}
+\DeclareFontShape{T1}{fdc}{l}{n}{
+   <-> fdcld8t
+}{}
+
+\endinput

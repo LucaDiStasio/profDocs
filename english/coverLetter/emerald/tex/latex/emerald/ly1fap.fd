@@ -1,0 +1,17 @@
+%Filename: ly1fap.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ly1fap.fd}
+   [2006/01/25 Fontinst v1.926 font definitions for LY1/fap.]
+
+\DeclareFontFamily{LY1}{fap}{}
+
+\DeclareFontShape{LY1}{fap}{m}{n}{
+   <-> fapmd8y
+}{}
+
+
+\endinput

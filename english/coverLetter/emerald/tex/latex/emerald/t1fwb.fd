@@ -1,0 +1,17 @@
+%Filename: t1fwb.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{t1fwb.fd}
+   [2006/01/25 Fontinst v1.926 font definitions for T1/fwb.]
+
+\DeclareFontFamily{T1}{fwb}{}
+
+\DeclareFontShape{T1}{fwb}{m}{n}{
+   <-> fwbmr8t
+}{}
+
+
+\endinput

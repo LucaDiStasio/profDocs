@@ -1,0 +1,17 @@
+%Filename: ly1fts.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ly1fts.fd}
+   [2006/01/25 Fontinst v1.926 font definitions for LY1/fts.]
+
+\DeclareFontFamily{LY1}{fts}{}
+
+\DeclareFontShape{LY1}{fts}{m}{n}{
+   <-> ftsmdw8y
+}{}
+
+
+\endinput

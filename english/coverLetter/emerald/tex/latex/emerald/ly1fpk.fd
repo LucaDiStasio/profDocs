@@ -1,0 +1,17 @@
+%Filename: ly1fpk.fd
+%Created by: tex newfont
+%Created using fontinst v1.928
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ly1fpk.fd}
+   [2006/01/29 Fontinst v1.928 font definitions for LY1/fpk.]
+
+\DeclareFontFamily{LY1}{fpk}{}
+
+\DeclareFontShape{LY1}{fpk}{m}{n}{
+   <-> fpkmr8y
+}{}
+
+
+\endinput

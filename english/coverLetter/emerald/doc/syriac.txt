@@ -1,0 +1,124 @@
+    eeeee            ccccc            fffff
+  eeeeeeeee        ccccccccc        fffffffff
+ eeee   eeee      cccc   cccc      ffff   ffff
+eeee     eeee    cccc     cccc    ffff     ffff
+eeee     eeee    cccc             ffff
+eeeeeeeeeeeee    cccc             fffffffff
+eeeeeeeeeeee     cccc             fffffffff
+eeee             cccc             ffff
+eeee     eeee    cccc     cccc    ffff         
+ eeee   eeee      cccc   cccc     ffff         emerald city fontwerks
+  eeeeeeeee        ccccccccc      ffff               seattle, wa, usa
+    eeeee            ccccc        ffff         www.speakeasy.org/~ecf
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+a tip of the hat to you and yours,
+and thank you for your interest in "syriac".
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+a set of exotic letterforms
+from the ancient language of syria.
+
+"footprints past,
+of both living and dead,
+shall determine the scope
+of the journey ahead..."
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+"syriac"
+is a windows/macintosh truetype and postscript type 1 font
+handcrafted in the emerald city
+by steven j. lundeen
+emerald city fontwerks 
+seattle, washington, usa.
+©2001
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+please note,
+
+"syriac" has been made available as freeware,
+and no restrictions are placed on its use.
+
+complete keystroke information
+is contained at the bottom of this text file.
+
+"syriac" may be freely re-distributed,
+provided that this text file accompanies the font.
+
+enjoy.
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+remember,
+what we do depends on you.
+
+please register shareware fonts where appropriate,
+and continue to show your support for the art of fontography.
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+ecf offers a complete line of fonts in three speeds:
+shareware, freeware and graphic art clipfonts.
+
+you can look for us at:
+
+http://www.speakeasy.org/~ecf
+
+hope you'll stop by for a visit sometime.
+coffee's always on,
+and we try to keep the fridge stocked, too ...
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+all comments, critiques, raves, flames and water balloons
+can be directed to:
+
+ecf@speakeasy.org
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+the syriac alphabet
+
+Olaph - A,a
+Beth	- B,b
+Gomal	- C,c
+Dolath- D,d
+He	- E,e
+Wau	- F,f
+Zain	- G,g
+Cheth	- H,h
+Teth	- I,i
+Jud	- J,j
+Coph	- K,k
+Lomad	- L,l
+Mim	- M,m
+Nun	- N,n
+Semchath- O,o
+Ae	- P,p
+Pe	- Q,q
+Tsode	- R,r
+Koph	- S,s
+Risch	- T,t
+Schin	- U,u
+Tau	- V,v
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+we dutifully acknowledge the shortcomings of this font,
+and hope, at some point in the future,
+to improve upon the present version....
+
+thanks for all the comments....

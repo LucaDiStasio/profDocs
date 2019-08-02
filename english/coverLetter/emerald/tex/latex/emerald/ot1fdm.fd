@@ -1,0 +1,18 @@
+%Filename: ot1fdm.fd
+%Created by: tex newfont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ot1fdm.fd}
+   [2006/01/26 Fontinst v1.926 font definitions for OT1/fdm.]
+
+\DeclareFontFamily{OT1}{fdm}{}
+
+\DeclareFontShape{OT1}{fdm}{b}{n}{
+   <-> fdmbd7tc
+}{}
+
+\DeclareFontShape{OT1}{fdm}{bx}{n}{<->ssub * fdm/b/n}{}
+
+\endinput

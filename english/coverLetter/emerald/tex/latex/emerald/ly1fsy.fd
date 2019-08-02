@@ -1,0 +1,17 @@
+%Filename: ly1fsy.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ly1fsy.fd}
+   [2006/01/25 Fontinst v1.926 font definitions for LY1/fsy.]
+
+\DeclareFontFamily{LY1}{fsy}{}
+
+\DeclareFontShape{LY1}{fsy}{m}{n}{
+   <-> fsymp8y
+}{}
+
+
+\endinput

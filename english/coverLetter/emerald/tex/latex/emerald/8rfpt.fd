@@ -1,0 +1,13 @@
+%Filename: 8rfpt.fd
+%Created by: tex newfont
+%Created using fontinst v1.928
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{8rfpt.fd}
+   [2006/01/29 Fontinst v1.928 font definitions for 8r/fpt.]
+
+\DeclareFontFamily{8r}{fpt}{}
+
+
+\endinput

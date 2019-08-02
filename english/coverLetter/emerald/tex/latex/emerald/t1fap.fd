@@ -1,0 +1,17 @@
+%Filename: t1fap.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{t1fap.fd}
+   [2006/01/25 Fontinst v1.926 font definitions for T1/fap.]
+
+\DeclareFontFamily{T1}{fap}{}
+
+\DeclareFontShape{T1}{fap}{m}{n}{
+   <-> fapmd8t
+}{}
+
+
+\endinput

@@ -1,0 +1,19 @@
+%Filename: ly1fin.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ly1fin.fd}
+   [2006/01/25 Fontinst v1.926 font definitions for LY1/fin.]
+
+\DeclareFontFamily{LY1}{fin}{}
+
+\DeclareFontShape{LY1}{fin}{m}{n}{
+   <-> finmd8y
+}{}
+\DeclareFontShape{LY1}{fin}{l}{n}{
+   <-> finld8y
+}{}
+
+\endinput

@@ -1,0 +1,91 @@
+============================================================
+
+            The emerald fonts for use with LaTeX
+
+============================================================
+                                                  2006-01-29
+                                          M. Cesar Rodriguez
+                                         <mcesar@sec.upm.es>
+
+
+emerald is a package which  gives support for some free  ECF
+(emerald  city  fontwerks,   http://www.speakeasy.org/~ecf/)
+fonts  in  LaTeX.  These  fonts  are  mainly  display and/or
+handwritten fonts.
+
+The  distribution  includes the  Type1  fonts, all  required
+files for  using them  within LaTeX  and font  map files for
+dvips and pdfTeX. File "emerald.pdf" shows all these fonts.
+
+
+Installing the files
+--------------------
+A  TDS-compliant  TeX system,  e.g.,  teTeX, fpTeX,  MikTeX,
+emTeX/TDS, VTeX/Free is assumed. Target directories which do
+not yet exist  are to be  created first. Copy  trees "fonts"
+and "tex" into your texmf folder. 
+
+ 
+Configuring dvips
+-----------------
+Make dvips  read the  additional font  map file emerald.map.
+This is usually accomplished by adding the line
+
+p +emerald.map
+
+to the dvips configuration file. With teTeX, fpTeX or MikTeX
+this   is   texmf/dvips/config/config.ps;   with   emTeX/TDS
+additions should go to texmf\dvips\local\dvips.ini.
+
+On MiKTeX you can instead add the line
+
+Map emerald.map
+
+to file  texmf/web2c/updmap.cfg and  the run  mkfntmap in  a
+shell window. This will also configure pdfTeX and Yap.
+
+
+Configuring pdfTeX
+------------------
+Make pdfTeX read the  additional font map file  emerald.map.
+This is usually accomplished by adding the line
+
+map +emerald.map
+
+to  the  pdfTeX  configuration file.  With  teTeX,  fpTeX or
+MikTeX this is texmf/pdftex/config/pdftex.cfg.
+
+On MiKTeX you can instead add the line
+
+Map emerald.map
+
+to file  texmf/web2c/updmap.cfg and  the run  mkfntmap in  a
+shell window. This will also configure dvips and Yap.
+
+
+Updating the filename database
+------------------------------
+Certain TeX systems  require updating a  "filename database"
+manually after adding  new files. Consult  the documentation
+of your TeX system!
+
+
+Using the emerald fonts with LaTeX
+----------------------------------
+load package emerald.sty (\usepackage{emerald}) which  gives
+some   commands   to   switch  to   the   new   fonts.  Read
+"doc/emerald.pdf" for details.
+
+
+Legal notice
+------------
+The ECF  fonts are  freeware; but  see the  acompanying .TXT
+files in folder "doc".
+
+The TeX support and documentation files are subject to
+
+ Copyright (c) 2006 M. Cesar Rodriguez
+ 
+and are published under the conditions of the LaTeX  Project
+Public License, either version  1.3b of this license  or (at
+your option) any later version.

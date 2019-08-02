@@ -1,0 +1,13 @@
+%Filename: 8rfsk.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{8rfsk.fd}
+   [2006/01/25 Fontinst v1.926 font definitions for 8r/fsk.]
+
+\DeclareFontFamily{8r}{fsk}{}
+
+
+\endinput

@@ -1,0 +1,17 @@
+%Filename: ot1fpt.fd
+%Created by: tex newfont
+%Created using fontinst v1.928
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ot1fpt.fd}
+   [2006/01/29 Fontinst v1.928 font definitions for OT1/fpt.]
+
+\DeclareFontFamily{OT1}{fpt}{}
+
+\DeclareFontShape{OT1}{fpt}{m}{n}{
+   <-> fptmt7t
+}{}
+
+
+\endinput

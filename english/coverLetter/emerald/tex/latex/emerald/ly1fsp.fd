@@ -1,0 +1,20 @@
+%Filename: ly1fsp.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ly1fsp.fd}
+   [2006/01/25 Fontinst v1.926 font definitions for LY1/fsp.]
+
+\DeclareFontFamily{LY1}{fsp}{}
+
+\DeclareFontShape{LY1}{fsp}{m}{n}{
+   <-> fspmr8y
+}{}
+\DeclareFontShape{LY1}{fsp}{m}{it}{
+   <-> fspmi8y
+}{}
+
+
+\endinput

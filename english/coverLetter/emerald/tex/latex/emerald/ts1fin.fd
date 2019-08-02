@@ -1,0 +1,19 @@
+%Filename: ts1fin.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ts1fin.fd}
+   [2006/01/25 Fontinst v1.926 font definitions for TS1/fin.]
+
+\DeclareFontFamily{TS1}{fin}{}
+
+\DeclareFontShape{TS1}{fin}{m}{n}{
+   <-> finmd8c
+}{}
+\DeclareFontShape{TS1}{fin}{l}{n}{
+   <-> finld8c
+}{}
+
+\endinput

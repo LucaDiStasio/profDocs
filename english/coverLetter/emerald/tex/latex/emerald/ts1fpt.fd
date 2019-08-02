@@ -1,0 +1,17 @@
+%Filename: ts1fpt.fd
+%Created by: tex newfont
+%Created using fontinst v1.928
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ts1fpt.fd}
+   [2006/01/29 Fontinst v1.928 font definitions for TS1/fpt.]
+
+\DeclareFontFamily{TS1}{fpt}{}
+
+\DeclareFontShape{TS1}{fpt}{m}{n}{
+   <-> fptmt8c
+}{}
+
+
+\endinput

@@ -1,0 +1,31 @@
+%Filename: ly1fdc.fd
+%Created by: tex newfont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ly1fdc.fd}
+   [2006/01/26 Fontinst v1.926 font definitions for LY1/fdc.]
+
+\DeclareFontFamily{LY1}{fdc}{}
+
+\DeclareFontShape{LY1}{fdc}{m}{n}{
+   <-> fdcmd8y
+}{}
+\DeclareFontShape{LY1}{fdc}{c}{n}{
+   <-> fdcmd8yc
+}{}
+\DeclareFontShape{LY1}{fdc}{x}{n}{
+   <-> fdcmd8ye
+}{}
+\DeclareFontShape{LY1}{fdc}{b}{n}{
+   <-> fdcbd8y
+}{}
+\DeclareFontShape{LY1}{fdc}{bc}{n}{
+   <-> fdcbd8yc
+}{}
+\DeclareFontShape{LY1}{fdc}{l}{n}{
+   <-> fdcld8y
+}{}
+
+\endinput

@@ -1,0 +1,20 @@
+%Filename: ly1fsb.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ly1fsb.fd}
+   [2006/01/26 Fontinst v1.926 font definitions for LY1/fsb.]
+
+\DeclareFontFamily{LY1}{fsb}{}
+
+\DeclareFontShape{LY1}{fsb}{m}{n}{
+   <-> fsbmr8y
+}{}
+\DeclareFontShape{LY1}{fsb}{m}{it}{
+   <-> fsbmi8y
+}{}
+
+
+\endinput

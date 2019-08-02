@@ -1,0 +1,20 @@
+%Filename: ts1fsp.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ts1fsp.fd}
+   [2006/01/25 Fontinst v1.926 font definitions for TS1/fsp.]
+
+\DeclareFontFamily{TS1}{fsp}{}
+
+\DeclareFontShape{TS1}{fsp}{m}{n}{
+   <-> fspmr8c
+}{}
+\DeclareFontShape{TS1}{fsp}{m}{it}{
+   <-> fspmi8c
+}{}
+
+
+\endinput

@@ -1,0 +1,17 @@
+%Filename: ot1fjd.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ot1fjd.fd}
+   [2006/01/25 Fontinst v1.926 font definitions for OT1/fjd.]
+
+\DeclareFontFamily{OT1}{fjd}{}
+
+\DeclareFontShape{OT1}{fjd}{m}{n}{
+   <-> fjdmw7t
+}{}
+
+
+\endinput

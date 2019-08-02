@@ -1,0 +1,20 @@
+%Filename: ot1fsb.fd
+%Created by: tex pookiefont
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ot1fsb.fd}
+   [2006/01/26 Fontinst v1.926 font definitions for OT1/fsb.]
+
+\DeclareFontFamily{OT1}{fsb}{}
+
+\DeclareFontShape{OT1}{fsb}{m}{n}{
+   <-> fsbmr7t
+}{}
+\DeclareFontShape{OT1}{fsb}{m}{it}{
+   <-> fsbmi7t
+}{}
+
+
+\endinput
