@@ -1,0 +1,173 @@
+% FortySecondsCV LaTeX template
+% Copyright © 2019 René Wirnata <rene.wirnata@pandascience.net>
+% Licensed under the 3-Clause BSD License. See LICENSE file for details.
+%
+% Attributions
+% ------------
+% * fortysecondscv is based on the twentysecondcv class by Carmine Spagnuolo 
+%   (cspagnuolo@unisa.it), released under the MIT license and available under
+%   https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex
+% * further attributions are indicated immediately before corresponding code
+
+
+%-------------------------------------------------------------------------------
+%                             ADDITIONAL PACKAGES
+%-------------------------------------------------------------------------------
+\documentclass[
+  a4paper, 
+%   showframes,
+%   maincolor=cvgreen,
+%   sectioncolor=red,
+%   subsectioncolor=orange
+%   sidebarwidth=0.4\paperwidth,
+%   topbottommargin=0.03\paperheight,
+%   leftrightmargin=20pt
+]{fortysecondscv}
+
+% improve word spacing and hyphenation
+\usepackage{microtype}
+\usepackage{ragged2e}
+
+% take care of proper font encoding
+\ifxetex
+	\usepackage{fontspec}
+	\defaultfontfeatures{Ligatures=TeX}
+% \newfontfamily\headingfont[Path = fonts/]{segoeuib.ttf} % local font
+\else
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+% \usepackage[sfdefault]{noto} % use noto google font
+\fi
+
+% enable mathematical syntax for some symbols like \varnothing
+\usepackage{amssymb}
+
+% bubble diagram configuration
+\usepackage{smartdiagram}
+\smartdiagramset{
+  % defaut font size is \large, so adjust to harmonize with sidebar layout
+  bubble center node font = \footnotesize,
+  bubble node font = \footnotesize,
+  % default: 4cm/2.5cm; make minimum diameter relative to sidebar size
+  bubble center node size = 0.4\sidebartextwidth,
+  bubble node size = 0.25\sidebartextwidth,
+  distance center/other bubbles = 1.5em,
+  % set center bubble color
+  bubble center node color = maincolor!70,
+  % define the list of colors usable in the diagram
+  set color list = {maincolor!10, maincolor!40,
+  maincolor!20, maincolor!60, maincolor!35},
+  % sets the opacity at which the bubbles are shown
+  bubble fill opacity = 0.8,
+}
+
+\usepackage{datetime}
+\usepackage{lipsum}
+
+%-------------------------------------------------------------------------------
+%                            PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+% profile picture
+\cvprofilepic{ValeLuca-29.jpg}
+% your name
+\cvname{Luca Di Stasio}
+% job title/career
+\cvjobtitle{Early Stage Researcher}
+\cvcert{D-CPR Certified (FR, SE)}
+\cvdlic{Driver License Cat. B (IT)}
+\cvnation{Italian \& EU citizen}
+% short address/location, use \newline if more than 1 line is required
+\cvaddress{Stormv\"agen 299\newline SE-97634 Lule\aa, Sweden}
+% phone number
+\cvphone{+46 76 453 21 60}
+% personal website
+\cvsite{\href{https://www.lucadistasioengineering.com}{www.lucadistasioengineering.com}}
+% email address
+\cvmail{luca.distasio@gmail.com}
+%\cvmailprof{luca.distasio@ingpec.eu}
+%\linkedin{https://www.linkedin.com/in/lucadistasio/}{My Linkedin}
+%\researchgate{https://www.researchgate.net/profile/Luca\_Di\_Stasio2}{My Researchgate}
+%\github{https://github.com/LucaDiStasio}{My Github}
+
+% add additional information
+% \newcommand{\additional}{some more?}
+
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 1st PAGE
+%-------------------------------------------------------------------------------
+% overwrite default icons and order of personal information
+% \renewcommand{\personaltable}{%
+% 	\begin{personal}[0.8em]
+% 		\circleicon{\faKey}      & \cvkey  \\
+% 		\circleicon{\faAt}       & \cvmail \\
+% 		\circleicon{\faGlobe}    & \cvsite \\
+% 		\circleicon{\faPhone}    & \cvphone \\
+% 		\circleicon{\faEnvelope} & \cvaddress \\
+% 		\circleicon{\faInfo}     & \cvbirthday \\
+% 		% add another line
+% 		\circleicon{\faQuestion} & \additional
+% 	\end{personal}
+% }
+
+% add more profile sections to sidebar on first page
+\addtofrontsidebar{
+         \profilesection{Research Interests}
+		%Provided upon request.
+		\skill{\faEnvelope}{Prof. Janis Varna (supervisor)}
+                             \skill{}{Lule\aa\ tekniska universitet (Lule\aa, SE)}
+                             \skill{}{\href{mailto:janis.varna@ltu.se}{janis.varna@ltu.se}}
+		\skill{\faEnvelope}{Prof. Zoubir Ayadi (supervisor)}
+                             \skill{}{Universit\`e de Lorraine (Nancy, FR)}
+                             \skill{}{\href{mailto:zoubir.ayadi@univ-lorraine.fr}{zoubir.ayadi@univ-lorraine.fr}}
+	\skill{\faEnvelope}{Dr. Johanna Xu (former colleague)}
+                             \skill{}{Chalmers tekniska h\"ogskola}
+				   \skill{}{(G\"oteborg, SE)}
+                             \skill{}{\href{mailto:johannax@chalmers.se}{johannax@chalmers.se}}
+}
+
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 2nd PAGE
+%-------------------------------------------------------------------------------
+\addtobacksidebar{
+
+}
+
+%\newdateformat{monthdayyeardate}{\monthname[\THEMONTH]~\THEDAY, \THEYEAR}%
+
+%-------------------------------------------------------------------------------
+%                                   SPECIFIERS
+%-------------------------------------------------------------------------------
+\def\expertise{STI CAZZI}
+\def\position{MY DREAM JOB}
+\def\company{A COMPANY THAT PAYS WELL}
+
+\def\reference{\\[6pt] Reference \#}
+
+\def\salutation{MADAM/SIR}
+
+\def\readinginterest{boring stuff}
+\def\dissertationtopic{the only thought I had in the last 4 years}
+
+\def\profession{a researcher and an engineer}
+\def\fieldofexpertise{theoretical and applied mechanics}
+
+\def\finalbelief{money is good}
+\def\finalcommitment{earn a lot of it}
+
+%-------------------------------------------------------------------------------
+%                         TABLE ENTRIES RIGHT COLUMN
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makefrontsidebar
+
+\subsection{Research Area and Approach}
+\lipsum[1]
+\subsection{Current and Past Research}
+\lipsum[2]
+\subsection{Future Research Directions}
+\lipsum[3]
+
+\end{document} 
