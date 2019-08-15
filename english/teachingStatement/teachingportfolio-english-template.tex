@@ -1,0 +1,148 @@
+% FortySecondsCV LaTeX template
+% Copyright © 2019 René Wirnata <rene.wirnata@pandascience.net>
+% Licensed under the 3-Clause BSD License. See LICENSE file for details.
+%
+% Attributions
+% ------------
+% * fortysecondscv is based on the twentysecondcv class by Carmine Spagnuolo 
+%   (cspagnuolo@unisa.it), released under the MIT license and available under
+%   https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex
+% * further attributions are indicated immediately before corresponding code
+
+
+%-------------------------------------------------------------------------------
+%                             ADDITIONAL PACKAGES
+%-------------------------------------------------------------------------------
+\documentclass[
+  a4paper, 
+%   showframes,
+%   maincolor=cvgreen,
+%   sectioncolor=red,
+%   subsectioncolor=orange
+%   sidebarwidth=0.4\paperwidth,
+%   topbottommargin=0.03\paperheight,
+%   leftrightmargin=20pt
+]{fortysecondscv}
+
+% improve word spacing and hyphenation
+\usepackage{microtype}
+\usepackage{ragged2e}
+
+% take care of proper font encoding
+\ifxetex
+	\usepackage{fontspec}
+	\defaultfontfeatures{Ligatures=TeX}
+% \newfontfamily\headingfont[Path = fonts/]{segoeuib.ttf} % local font
+\else
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+% \usepackage[sfdefault]{noto} % use noto google font
+\fi
+
+% enable mathematical syntax for some symbols like \varnothing
+\usepackage{amssymb}
+
+% bubble diagram configuration
+\usepackage{smartdiagram}
+\smartdiagramset{
+  % defaut font size is \large, so adjust to harmonize with sidebar layout
+  bubble center node font = \footnotesize,
+  bubble node font = \footnotesize,
+  % default: 4cm/2.5cm; make minimum diameter relative to sidebar size
+  bubble center node size = 0.4\sidebartextwidth,
+  bubble node size = 0.25\sidebartextwidth,
+  distance center/other bubbles = 1.5em,
+  % set center bubble color
+  bubble center node color = maincolor!70,
+  % define the list of colors usable in the diagram
+  set color list = {maincolor!10, maincolor!40,
+  maincolor!20, maincolor!60, maincolor!35},
+  % sets the opacity at which the bubbles are shown
+  bubble fill opacity = 0.8,
+}
+
+\usepackage{datetime}
+\usepackage{lipsum}
+
+%-------------------------------------------------------------------------------
+%                            PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+% profile picture
+\cvprofilepic{ValeLuca-29.jpg}
+% your name
+\cvname{Luca Di Stasio}
+% job title/career
+\cvjobtitle{Early Stage Researcher}
+\cvcert{D-CPR Certified (FR, SE)}
+\cvdlic{Driver License Cat. B (IT)}
+\cvnation{Italian \& EU citizen}
+% short address/location, use \newline if more than 1 line is required
+\cvaddress{Stormv\"agen 299\newline SE-97634 Lule\aa, Sweden}
+% phone number
+\cvphone{+46 76 453 21 60}
+% personal website
+\cvsite{\href{https://www.lucadistasioengineering.com}{www.lucadistasioengineering.com}}
+% email address
+\cvmail{luca.distasio@gmail.com}
+%\cvmailprof{luca.distasio@ingpec.eu}
+%\linkedin{https://www.linkedin.com/in/lucadistasio/}{My Linkedin}
+%\researchgate{https://www.researchgate.net/profile/Luca\_Di\_Stasio2}{My Researchgate}
+%\github{https://github.com/LucaDiStasio}{My Github}
+
+% add additional information
+% \newcommand{\additional}{some more?}
+
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 1st PAGE
+%-------------------------------------------------------------------------------
+% overwrite default icons and order of personal information
+% \renewcommand{\personaltable}{%
+% 	\begin{personal}[0.8em]
+% 		\circleicon{\faKey}      & \cvkey  \\
+% 		\circleicon{\faAt}       & \cvmail \\
+% 		\circleicon{\faGlobe}    & \cvsite \\
+% 		\circleicon{\faPhone}    & \cvphone \\
+% 		\circleicon{\faEnvelope} & \cvaddress \\
+% 		\circleicon{\faInfo}     & \cvbirthday \\
+% 		% add another line
+% 		\circleicon{\faQuestion} & \additional
+% 	\end{personal}
+% }
+
+% add more profile sections to sidebar on first page
+\addtofrontsidebar{
+         	
+		
+}
+
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 2nd PAGE
+%-------------------------------------------------------------------------------
+\addtobacksidebar{
+
+}
+
+%\newdateformat{monthdayyeardate}{\monthname[\THEMONTH]~\THEDAY, \THEYEAR}%
+
+
+%-------------------------------------------------------------------------------
+%                         TABLE ENTRIES RIGHT COLUMN
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makefrontsidebar
+
+\section{Background}
+My main research interest lies in Integrated Computational Materials Engineering (ICME) with a particular focus on Fiber-Reinforced Polymer Composite (FRPC) materials, made of both man-made (carbon fibers, glass fibers, epoxy) and bio-sourced constituents (wood, wood-based products, cellulose, natural fibers). ICME represents a novel paradigm in the field of materials development proposed around 10-15 years ago and still in its early stage of growth. The objective is the development of predictive computational software, data analysis tools and automated experimental techniques and their mutual integration to reduce the time-to-market of new materials. This is achieved not by eliminating experimental assessment, but through its automation using software (image analysis, signal analysis, machine learning) and hardware (low-cost hardware, robotics) and by reducing the number of experiments needed through integration with predictive computational simulations and data science algorithms. My research interests thus lie at the cross-road of experimental mechanics, computational and data science and engineering. 
+
+\section{Higher Education Courses and Study Programmes}
+The work of my PhD thesis is devoted to the Linear Elastic Fracture Mechanics (LEFM) analysis of microscopic initiation of transverse cracking in thin-ply FRPC with the Finite Element Method (FEM). At the microscale, transverse cracks originate from fiber/matrix interface cracks or debonds, which coalesce to form what macroscopically are seen as transverse cracks. Debonds have been investigated in the past, but studies have focused on very few geometrical configurations with a restricted number of fibers embedded in an infinite matrix or homogenized composite. The novelty of my approach is twofold: analyzing configurations representative of FRPC laminates' microstructure and simulating a large number of geometrical configurations by automated model generation, simulation, data analysis, and reporting. Among other results, this approach has helped to prove a counter-intuitive claim: in cross-ply laminates the fiber/matrix interface crack, and thus initiation of transverse cracking, is influenced neither by the thickness of the $90^{\circ}$ layer nor of the $0^{\circ}$ ply, very differently from what has been observed macroscopically for transverse cracks. Furthermore, I have proposed a novel vectorial formulation of the Virtual Crack Closure Technique (VCCT) with which I have shown, both analytically and numerically, for the VCCT-computed Energy Release Rate (ERR) of the FEM-resolved circular interface crack (fiber/matrix interface crack): the logarithmic, and thus unbounded, nature of the convergence of Mode I and Mode II ERR; the independence of total ERR from mesh refinement and crack path direction.\\
+Apart from the work of my PhD thesis, I have also been working on: the experimental assessment of transverse cracking in glass fiber/epoxy cross-ply laminates under different environmental and thermo-mechanical conditions (aging, high temperature, loading rate); the experimental investigation of the effect of temperature, degree of cure and curing history on mechanical properties of epoxy matrix under different combinations of thermo-mechanical loads.
+
+\section{Experience of Teaching and Supervision within Higher Education}
+In the short- to medium-term perspective, I am currently laying the groundwork for several future works: derivation of the vectorial VCCT from Eshelby's elastic energy-momentum tensor and proposal of a new mode-partitioning strategy based on eigenvalue analysis; investigation of fiber/matrix debonding with concurrent non-linear (viscoelastic, viscoplastic) behavior of the surrounding matrix; 3D modeling of fiber/matrix debonding; 3D imaging of fiber/matrix debonding using in-situ micro-tomography; development of an image analysis algorithm for automated stress-free temperature identification through curvature measurements of asymmetric laminates and its implementation with a temperature feedback loop on low-cost hardware (e.g. android handset, Arduino, Raspberry Pi); creation and real-time update of specimens' digital twins through low-cost hardware (Kinect for Xbox); application of Bayesian inference to the prediction of elastic, viscoelastic, viscoplastic, failure and fracture toughness properties.\\
+In the long term, I envision the development of the distributed, de-centralized, remotely-controlled, integrated laboratory for composite science and engineering: a set of fully automated laboratories and high-performance computing clusters connected together by a decentralized network (peer-to-peer) and accessible through an online platform, to allow collaborative projects on integrated computational-experimental analysis and design of materials between parties located around the globe.
+
+\end{document} 
