@@ -422,15 +422,15 @@
 	angle=0, 
 	position=current page.north west,
 	contents={%
-		\begin{tikzpicture}[remember picture, overlay]
-   		\node[
-   			rectangle,
-   			fill=sidecolor,
-   			anchor=north west,
-   			minimum width=\sidebarwidth,
-   			minimum height=\paperheight,
-			]{};% (frontsidebar) at (current page.north west){};
-		\end{tikzpicture}
+%		\begin{tikzpicture}[remember picture, overlay]
+%   		\node[
+% 			rectangle,
+%  			fill=sidecolor,
+%   			anchor=north west,
+%   			minimum width=\sidebarwidth,
+%   			minimum height=\paperheight,
+%			]{};% (frontsidebar) at (current page.north west){};
+%		\end{tikzpicture}
 	}
 }
 
@@ -453,6 +453,7 @@
 
 \newcommand{\makefrontsidebar}{%
 	\begin{sidebar}
+	
 		% most sidebar commands end with \par; increase space between them
 		\setlength{\parskip}{0.85ex}
 
