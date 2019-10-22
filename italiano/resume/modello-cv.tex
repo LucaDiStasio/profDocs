@@ -1,0 +1,330 @@
+% FortySecondsCV LaTeX template
+% Copyright © 2019 René Wirnata <rene.wirnata@pandascience.net>
+% Licensed under the 3-Clause BSD License. See LICENSE file for details.
+%
+% Attributions
+% ------------
+% * fortysecondscv is based on the twentysecondcv class by Carmine Spagnuolo 
+%   (cspagnuolo@unisa.it), released under the MIT license and available under
+%   https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex
+% * further attributions are indicated immediately before corresponding code
+
+
+%-------------------------------------------------------------------------------
+%                             ADDITIONAL PACKAGES
+%-------------------------------------------------------------------------------
+\documentclass[
+  a4paper, 
+%   showframes,
+%   maincolor=cvgreen,
+%   sectioncolor=red,
+%   subsectioncolor=orange
+%   sidebarwidth=0.4\paperwidth,
+%   topbottommargin=0.03\paperheight,
+%   leftrightmargin=20pt
+]{fortysecondscv}
+
+% improve word spacing and hyphenation
+\usepackage{microtype}
+\usepackage{ragged2e}
+
+% take care of proper font encoding
+\ifxetex
+	\usepackage{fontspec}
+	\defaultfontfeatures{Ligatures=TeX}
+% \newfontfamily\headingfont[Path = fonts/]{segoeuib.ttf} % local font
+\else
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+% \usepackage[sfdefault]{noto} % use noto google font
+\fi
+
+% enable mathematical syntax for some symbols like \varnothing
+\usepackage{amssymb}
+
+% bubble diagram configuration
+\usepackage{smartdiagram}
+\smartdiagramset{
+  % defaut font size is \large, so adjust to harmonize with sidebar layout
+  bubble center node font = \footnotesize,
+  bubble node font = \footnotesize,
+  % default: 4cm/2.5cm; make minimum diameter relative to sidebar size
+  bubble center node size = 0.4\sidebartextwidth,
+  bubble node size = 0.25\sidebartextwidth,
+  distance center/other bubbles = 1.5em,
+  % set center bubble color
+  bubble center node color = maincolor!70,
+  % define the list of colors usable in the diagram
+  set color list = {maincolor!10, maincolor!40,
+  maincolor!20, maincolor!60, maincolor!35},
+  % sets the opacity at which the bubbles are shown
+  bubble fill opacity = 0.8,
+}
+
+
+%-------------------------------------------------------------------------------
+%                            PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+% profile picture
+\cvprofilepic{ValeLuca-29.jpg}
+% your name
+\cvname{Luca Di Stasio}
+% job title/career
+\cvjobtitle{Early Stage Researcher}
+\cvcert{D-CPR Certified (FR, SE)}
+\cvdlic{Driver License Cat. B (IT)}
+\cvnation{Italian \& EU citizen}
+% short address/location, use \newline if more than 1 line is required
+\cvaddress{Stormv\"agen 299\newline SE-97643 Lule\aa, Sweden}
+% phone number
+\cvphone{+46 76 453 21 60}
+% personal website
+\cvsite{\href{https://www.linkedin.com/in/lucadistasio/}{Linkedin}, \href{https://www.researchgate.net/profile/Luca\_Di\_Stasio2}{Researchgate}}
+% email address
+\cvmail{luca.distasio@gmail.com}
+%\cvmailprof{luca.distasio@ingpec.eu}
+%\linkedin{https://www.linkedin.com/in/lucadistasio/}{My Linkedin}
+%\researchgate{https://www.researchgate.net/profile/Luca\_Di\_Stasio2}{My Researchgate}
+%\github{https://github.com/LucaDiStasio}{My Github}
+
+% add additional information
+% \newcommand{\additional}{some more?}
+
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 1st PAGE
+%-------------------------------------------------------------------------------
+% overwrite default icons and order of personal information
+% \renewcommand{\personaltable}{%
+% 	\begin{personal}[0.8em]
+% 		\circleicon{\faKey}      & \cvkey  \\
+% 		\circleicon{\faAt}       & \cvmail \\
+% 		\circleicon{\faGlobe}    & \cvsite \\
+% 		\circleicon{\faPhone}    & \cvphone \\
+% 		\circleicon{\faEnvelope} & \cvaddress \\
+% 		\circleicon{\faInfo}     & \cvbirthday \\
+% 		% add another line
+% 		\circleicon{\faQuestion} & \additional
+% 	\end{personal}
+% }
+
+% add more profile sections to sidebar on first page
+\addtofrontsidebar{
+
+
+	\profilesection{Computer Skills}
+		\skill{\faCode}{Operating Systems}
+                             \skill{}{Linux (Ubuntu, OpenSUSE, CentOS)}
+                             \skill{}{Windows (>95), Mac OS X (>10.6)}
+		\skill{\faCode}{Languages}
+                             \skill{}{C, C++, Python, Perl, Java, Fortran}
+                             \skill{}{VBA, Javascript, HTML(5), CSS}
+                             \skill{}{Bash, Windows Batch Scripting}
+		\skill{\faCode}{High Performance Computing}
+                             \skill{}{OpenMP, MPI, CUDA, OpenACC}
+		\skill{\faCode}{Scientific Computing \& Statistics}
+                             \skill{}{Numpy, Scipy, R, Stata}
+                             \skill{}{Matlab, Mathematica, Octave, Maple}
+                             \skill{}{Excel, G-Sheets, LibreOffice Calc}
+		\skill{\faCode}{CAD, CAM, CAE}
+                             \skill{}{Autocad, Solid Edge, G-code}
+                             \skill{}{Abaqus, Ansys, Comsol Multiphysics}
+                             \skill{}{CalculiX, FEniCS, Code\_Aster}
+                             \skill{}{OpenFOAM, Thermal Desktop}
+		\skill{\faCode}{Web Development}
+                             \skill{}{AJAX, JQuery, Bootstrap, Angular}
+                             \skill{}{React, D3, Node.js, Npm}
+		\skill{\faCode}{Databases}
+                             \skill{}{SQL, MongoDB}
+		\skill{\faCode}{Versioning}
+                             \skill{}{Git, Github}
+		\skill{\faCode}{Writing \& Reporting}
+                             \skill{}{Latex, Tikz, Beamer, Word, Powerpoint}
+
+%	\profilesection{Soft Skills}
+%		\pointskill{\faHome}{Looking Cute}{5}
+% 			\skill[1.8em]{\faCompress}{No need to specify further}
+%		\pointskill{\faTasks}{Being Black \& White}{5}
+% 			\skill[1.8em]{\faCompress}{Having white parts}
+% 			\skill[1.8em]{\faCompress}{Having black parts}
+%		\pointskill{\faChild}{Chillin' hard}{4}
+% 			\skill[1.8em]{\faCompress}{On a tree}
+% 			\skill[1.8em]{\faCompress}{On the grass}
+%		\pointskill{\faComment}{Being an Idol}{3}
+% 			\skill[1.8em]{\faCompress}{Kung Fu Panda 1-3}
+% 			\skill[1.8em]{\faCompress}{WoW: Mists of Pandaria}
+}
+
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 2nd PAGE
+%-------------------------------------------------------------------------------
+\addtobacksidebar{
+
+         \profilesection{Technical Skills}
+		\skill{\faGears}{Mechanical \& Electrical Engineering}
+                             \skill{}{Creation of Drawings \& Specifications}
+                             \skill{}{Circuit Design \& Assembly}
+                             \skill{}{Milling, Turning, Drilling, Welding}
+                             \skill{}{Operating CNC \& Precision Machines}
+		\skill{\faGears}{Composites Science \& Technology}
+                             \skill{}{Hand layup, Resin Molding \& Casting}
+                             \skill{}{Specimen Cutting \& Polishing}
+                             \skill{}{UTM Testing, Strain Measurements}
+                             \skill{}{Optical \& Digital Microscopy, SEM}
+		\skill{\faSitemap}{Project Management}
+                             \skill{}{Goals \& Specifications Formulation}
+                             \skill{}{Planning, Scheduling \& Supervision}
+                             \skill{}{Funding \& Budgeting}
+		\skill{\faPencil}{Technical Writing \& Communication}
+                             \skill{}{Technical Reports, Scientific Articles}
+                             \skill{}{Seminar \& Conference Presentations}
+                             \skill{}{Meeting, Video-Conferencing}
+
+	\profilesection{Languages}
+           \skill{\faLanguage}{Italian (mother tongue)}
+		\pointskill[1.8em]{}{Speaking}{5}
+		\pointskill[1.8em]{}{Writing}{5}
+                     \pointskill[1.8em]{}{Reading}{5}
+  	\skill{\faLanguage}{English (fluent)}
+		\pointskill[1.8em]{}{Speaking}{5}
+		\pointskill[1.8em]{}{Writing}{5}
+                     \pointskill[1.8em]{}{Reading}{5}
+  	\skill{\faLanguage}{French (fluent)}
+		\pointskill[1.8em]{}{Speaking}{4}
+		\pointskill[1.8em]{}{Writing}{4}
+                     \pointskill[1.8em]{}{Reading}{5}
+           \skill{\faLanguage}{Spanish (fluent)}
+		\pointskill[1.8em]{}{Speaking}{4}
+		\pointskill[1.8em]{}{Writing}{4}
+                     \pointskill[1.8em]{}{Reading}{5}
+  	\skill{\faLanguage}{German (satisfactory)}
+		\pointskill[1.8em]{}{Speaking}{2}
+		\pointskill[1.8em]{}{Writing}{3}
+                     \pointskill[1.8em]{}{Reading}{3}
+  	\skill{\faLanguage}{Swedish (rudimentary)}
+		\pointskill[1.8em]{}{Speaking}{1}
+		\pointskill[1.8em]{}{Writing}{1}
+                     \pointskill[1.8em]{}{Reading}{2}
+           \skill{\faLanguage}{Russian (rudimentary)}
+		\pointskill[1.8em]{}{Speaking}{1}
+		\pointskill[1.8em]{}{Writing}{1}
+                     \pointskill[1.8em]{}{Reading}{2}
+%	\profilesection{Memberships}
+%	\begin{memberships}
+%		\membership{pics/logo.png}{PandaScience.net}
+%		\membership{pics/logo.png}{Here's some longer text spanning over more than
+%			only one line}
+%	\end{memberships}
+
+}
+
+
+%-------------------------------------------------------------------------------
+%                         TABLE ENTRIES RIGHT COLUMN
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makefrontsidebar
+
+\cvsection{Work Experience}
+\subsection{Research \& Development}
+\begin{cvtable}
+	\cvitem{currently}{Early stage researcher}{Luleå University of Technology, Luleå, Sweden}{Polymeric Composites Group, TVM.\\{\small\textit{\small Projects}: Mechanics of extreme thin composite layers for aerospace applications; Effect of aging on transverse cracking in GFRPC; Temperature and loading rate effect on transverse cracking in GFRPC.\\\textit{\small Working language(s)}: Swedish, English.}}[1.5em]
+	\cvitem{2015 - 2017}{Early stage researcher}{Universit\'e de Lorraine, Nancy, France}{Mechanics of Materials Group, SI2M, IJL, EEIGM.\\{\small\textit{\small Projects}: Mechanics of extreme thin composite layers for aerospace applications.\\\textit{\small Working language(s)}: French, English.}}[1.5em]
+          \cvitem{2013 - 2015}{Early stage researcher}{ETH Z\"urich, Z\"urich, Switzerland}{Computational Physics for Engineering Materials Group, D-BAUG.\\{\small\textit{\small Projects}: Fluid-structure interaction on deformable surfaces; Multi-scale modeling of wood.\\\textit{\small Working language(s)}: German, English.}}[1.5em]
+          \cvitem{2012 - 2013}{Research assistant}{IMDEA Materials Institute, Madrid, Spain}{Structural Composites Group.\\{\small\textit{\small Projects}: Loading rate effects on interlaminar fracture toughness in advanced CFRP.\\\textit{\small Working language(s)}: Spanish, English.}}[1.5em]
+          \cvitem{2012}{Research assistant}{Drexel University, Philadelphia, USA}{Mesoscale Materials Laboratory \&  BioMechanics Laboratory.\\{\small\textit{\small Projects}: Design of nano-resonators for environmental electromagnetic field detection; Talus morphology and its relationship to the kinematics of the ankle joint.\\\textit{\small Working language(s)}: English.}}[1.5em]
+\end{cvtable}
+\subsection{Teaching \& Supervision}
+\begin{cvtable}
+	\cvitem{currently}{Teaching Assistant}{Luleå University of Technology, Luleå, Sweden}{{\small\textit{\small Subjects}: Elasticity, Rheological models, Fracture mechanics, Experimental methods, Mechanics of Composite Materials, Laminate Analysis, Finite Element Method.\\\textit{\small Working language(s)}: English.}}[1.5em]
+	\cvitem{2016 - 2017}{Teaching Assistant}{Universit\'e de Lorraine, Nancy, France}{{\small\textit{\small Subjects}: Mechanics of materials, Elasticity, Rheological models, Fracture mechanics, Experimental methods, Mechanics of Composite Materials, Finite Element Method.\\\textit{\small Working language(s)}: French.}}[1.5em]
+          \cvitem{2014 - 2015}{Tutor}{The Learning Center Z\"urich, Z\"urich, Switzerland}{{\small\textit{\small Subjects}: Mathematics, Physics, Statistics, Econometrics, Java programming.\\\textit{\small Working language(s)}: German, English.}}[1.5em]
+          \cvitem{2011}{Tutor}{Politecnico di Milano, Milano, Italy}{{\small\textit{Subjects}: Calculus.\\\textit{Working language(s)}: Italian.}}[1.5em]
+          \cvitem{2009 - 2011}{Tutor}{Scientific High School Istituto Sacro Cuore, Milano, Italy}{{\small\textit{\small Subjects}: Mathematics, Physics, Biology, Italian Language and Literature, Latin Language and Literature, History.\\\textit{\small Working language(s)}: Italian.}}[1.5em]
+\end{cvtable}
+\subsection{Institutional and Administrative Activities}
+\begin{cvtable}
+	\cvitem{2008 - 2011}{Student Representative}{Politecnico di Milano, Milano, Italy}{{\small Student representative in the board of the Department of Aerospace Engineering and in the board of the School of Industrial Engineering at Politecnico di Milano.\\\textit{\small Working language(s)}: Italian.}}[1.5em]
+\end{cvtable}
+%\subsection{Crafts Experience}
+%\begin{cvtable}
+%	\cvitem{currently}{CEO The Panda Way}{Start Up}{Chief executive officer, Head
+%	developer and yoga ambassador of 'The Panda Way' - A company for pandas from
+%	pandas that invents, advertises and distributes panda-related content all
+%	over the world.}
+%	\cvitem{2015 -- 2018}{Panda Scientist}{Bamboo University}{
+%		Reasearching the impact of adequate bamboo nutrition compared to
+%		conventional feeding methods.}
+%	\cvitem{2010 -- 2015}{Bamboo Broker}{Stock Exchange}{Continuously achieving 
+%		better bamboo bangs for the buck.}
+%\end{cvtable}
+\subsection{Volunteer Work}
+\begin{cvtable}
+	\cvitem{currently}{Instructor}{The Carpentries, CA, USA.}{{\small Conducting workshops to teach foundational coding and data science skills (Unix Shell, Git, Python, R) to researchers.\\\textit{\small Working language(s)}: English.}}
+\end{cvtable}
+
+\section{Memberships}
+\begin{cvtable}
+	\cvitem{Since 2014}{Ordine degli Ingegneri della Provincia di Milano (Society of Licensed Engineers of Milan)}{}{}
+\end{cvtable}
+
+\newpage
+\makebacksidebar
+
+\cvsection{Education}
+\subsection{Higher Education}
+\begin{cvtable}
+	\cvitem{2013}{Professional License, Industrial Engineering}{\\Politecnico di Milano, Milano, Italy}
+		{{\small\textit{\small Working language(s)}:  Italian.}}
+	\cvitem{2010 - 2013}{Master of Science, Space Engineering, \textit{110/110}}{\\Politecnico di Milano, Milano, Italy}
+		{{\small \emph{\small Double M.Sc. degree project EAGLES (Politecnico di Milano, Milano, Italy - Drexel University, Philadelphia, USA - Universidad Polit\'ecnica de Madrid, Madrid, Spain)}\\\textit{\small Working language(s):} Italian, English, Spanish.}}
+	\cvitem{2011 - 2012}{Master of Science, Mechanical Engineering, \textit{4/4}}{\\Drexel University, Philadelphia, USA}
+		{{\small \emph{\small Double M.Sc. degree project EAGLES (Politecnico di Milano, Milano, Italy - Drexel University, Philadelphia, USA - Universidad Polit\'ecnica de Madrid, Madrid, Spain)}\\\textit{\small Working language(s):} English.}}
+	\cvitem{2007 - 2010}{Bachelor of Science, Aerospace Engineering, \textit{110/110}}{\\Politecnico di Milano, Milano, Italy}
+		{{\small \textit{\small Working languages(s):} Italian.}}
+	\cvitem{2002 - 2007}{Scientific High School Diploma, \textit{100/100 cum Laude}}{\\Scientific High School Istituto Sacro Cuore, Milano, Italy}
+		{{\small \textit{Working languages(s):} Italian.}}
+	\cvitem{1997 - 2007}{Cello Studies}{\\Municipal School of Music, Cernusco s/N, Italy}
+		{{\small \textit{\small Working language(s):} Italian.}}
+\end{cvtable}
+\subsection{Selected Courses \& Seminars}
+\begin{cvtable}
+	\cvitem{2018 - 2019}{Qualifying Course for University Teachers}{\\Lule\aa\ University of Technology, Lule\aa, Sweden}
+		{{\small\emph{\small In-Class Course and Verified Certificate of Completion.}\\\textit{\small Working language(s):} English.}}
+	\cvitem{2016}{Project Management MOOC - Classic Course}{\\Centrale Lille and Unow, Lille, France}
+		{{\small\emph{\small Online MOOC and Certificate of Completion.}\\\textit{\small Working language(s):} French.}}
+	\cvitem{2015}{Corporate Social Responsibility (CSR) and Value Creation}{\\Audencia Nantes Business School, Nantes, France}
+		{{\small\emph{\small Online MOOC and Verified Certificate of Completion.}\\\textit{\small Working language(s):} English.}}
+	\cvitem{2015}{2015 Summer School on Effective High Performance Computing}{\\CSCS and Universit\'a della Svizzera Italiana, Lugano, Switzerland.}
+		{{\small\emph{\small In-Class Course, Hands-on Training and Certificate of Completion.}\\\textit{\small Working language(s):} English.}}
+\end{cvtable}
+\subsection{Vocational Training}
+\begin{cvtable}
+	\cvitem{2009}{CNC Technician}{Centro di Formazione Professionale Salesiano Don Bosco, Milano, Italy}
+		{{\small\emph{\small In-Class Course, Hands-on Training and Certificate of Competence.}\\\textit{\small Working language(s):} Italian.}}
+\end{cvtable}
+
+\cvsection{Selected Publications}
+\begin{cvtable}
+	\cvitem{{\small 2019}}{{\normalfont\small Growth of interface cracks on consecutive fibers: on the same or on the opposite sides?}}{}{\small Proceedings of the \emph{12$^{th}$ International Conference on Composite Science and Technology - Sorrento, Italy - May 8-10$^{th}$, 2019}}
+	%\cvitem{{\small 2019}}{{\normalfont\small Energy release rate of the fiber/matrix interface crack growth in $\left[0_{m\cdot2l}^{\circ},90_{l}^{\circ}\right]_{S}$ laminates under transverse loading: effect of $0^{\circ}/90^{\circ}$ interface}}{}{{\small In Preparation}}
+	\cvitem{{\small 2019}}{\href{https://www.researchgate.net/publication/326633299_Effect_of_boundary_conditions_on_microdamage_initiation_in_thin_ply_composite_laminates}{\normalfont\small Energy release rate of the fiber/matrix interface crack in UD composites under transverse loading: debond-debond and debond-free boundary interactions}}{}{{\small\emph{\small Theoretical and Applied Fracture Mechanics}, doi: \href{https://doi.org/10.1016/j.tafmec.2019.102251}{10.1016/j.tafmec.2019.102251}}}
+	\cvitem{{\small 2018}}{\href{http://ltu.diva-portal.org/smash/record.jsf?pid=diva2\%3A1264160\&dswid=760}{\normalfont\small Effect of boundary conditions on microdamage initiation in thin ply composite laminates}}{}{{\small Proceedings of the \emph{\small ECCM18 - 18$^{th}$ European Conference on Composite Materials - Athens, Greece - June 24-28$^{th}$, 2018}}}
+	\cvitem{{\small 2013}}{\href{https://www.politesi.polimi.it/handle/10589/82983}{\normalfont\small Experimental, Analytical and Numerical Investigation of Loading Rate Effects on Mode I, Mode II and Mixed Mode I-II Delamination in Advanced CFRP}}{}{{\small Master Thesis, Master of Science in Space Engineering. Politecnico di Milano, Milano, Italy.}}
+\end{cvtable}
+
+
+%\cvsection{Awards}
+%\begin{cvtable}
+%	\cvitem{2010 -- now}{Panda of the Year}{Panda World Forum}{}
+%	\cvitem{2005 -- now}{Face of World Wide Fund for Nature}{WWF}{}
+%	\cvitem{2000}{Winner of Bamboo Sprouts Eating Contest}{Bamboo Society}{}
+%\end{cvtable}
+
+
+
+%\cvsignature
+
+\end{document} 
