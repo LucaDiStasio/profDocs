@@ -1,96 +1,3 @@
-  226  ./push.sh KAUST master
-  227  ./push.sh KAUST master
-  228  ./push.sh KAUST master
-  229  ./push.sh KAUST master
-  230  ./push.sh KAUST master
-  231  ./push.sh KAUST master
-  232  ./push.sh KAUST master
-  233  ./push.sh profDocs master
-  234  ./push.sh profDocs master
-  235  ./push.sh profDocs master
-  236  ./push.sh profDocs master
-  237  ./push.sh KAUST master
-  238  ./push.sh KAUST master
-  239  ./push.sh KAUST master
-  240  ./push.sh KAUST master
-  241  python
-  242  ./push.sh KAUST master
-  243  ./push.sh KAUST master
-  244  ./push.sh KAUST master
-  245  ./push.sh KAUST master
-  246  ./push.sh KAUST master
-  247  ./push.sh KAUST master
-  248  ./push.sh KAUST master
-  249  ./push.sh KAUST master
-  250  ./push.sh KAUST master
-  251  ./push.sh KAUST master
-  252  ./push.sh KAUST master
-  253  ./push.sh KAUST master
-  254  ./push.sh KAUST master
-  255  ./push.sh KAUST master
-  256  ./push.sh KAUST master
-  257  ./push.sh KAUST master
-  258  ./push.sh KAUST master
-  259  ./push.sh KAUST master
-  260  ./push.sh KAUST master
-  261  ./push.sh KAUST master
-  262  ./push.sh KAUST master
-  263  ./push.sh KAUST master
-  264  ./push.sh KAUST master
-  265  ./push.sh KAUST master
-  266  ./push.sh KAUST master
-  267  ./push.sh KAUST master
-  268  ./push.sh KAUST master
-  269  ./push.sh KAUST master
-  270  ./push.sh KAUST master
-  271  ./push.sh KAUST master
-  272  ./push.sh KAUST master
-  273  ./push.sh KAUST master
-  274  ./push.sh KAUST master
-  275  ./push.sh KAUST master
-  276  ./push.sh KAUST master
-  277  ./push.sh KAUST master
-  278  ./push.sh KAUST master
-  279  ./push.sh KAUST master
-  280  ./push.sh KAUST master
-  281  ./push.sh KAUST master
-  282  ./push.sh KAUST master
-  283  ./push.sh KAUST master
-  284  ./push.sh KAUST master
-  285  ./push.sh KAUST master
-  286  ./push.sh KAUST master
-  287  ./push.sh KAUST master
-  288  ./push.sh KAUST master
-  289  ./push.sh KAUST master
-  290  ./push.sh KAUST master
-  291  ./push.sh KAUST master
-  292  ./push.sh KAUST master
-  293  ./push.sh KAUST master
-  294  ./push.sh KAUST master
-  295  ./push.sh KAUST master
-  296  ./push.sh KAUST master
-  297  ./push.sh KAUST master
-  298  python
-  299  ./push.sh KAUST master
-  300  ./push.sh KAUST master
-  301  ./push.sh KAUST master
-  302  ./push.sh KAUST master
-  303  ./push.sh KAUST master
-  304  ./push.sh KAUST master
-  305  ./push.sh KAUST master
-  306  ./push.sh KAUST master
-  307  ./push.sh KAUST master
-  308  python
-  309  python
-  310  python
-  311  python
-  312  ./push.sh KAUST master
-  313  ./push.sh KAUST master
-  314  ./push.sh KAUST master
-  315  ./push.sh KAUST master
-  316  ./push.sh KAUST master
-  317  ./push.sh KAUST master
-  318  ./push.sh KAUST master
   319  ./push.sh KAUST master
   320  ./push.sh KAUST master
   321  ./push.sh KAUST master
@@ -498,3 +405,96 @@
   723  foo=bar;echo "${foo~}"
   724  echo " , company, role, submitted, on, status, updated on" > profDocs/submission-summary.csv;counter=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}") | tr '-' ' ')", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}") | tr '-' ' ')", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$(date -r $folder"/DiStasioLuca-cover.pdf" "+%Y-%m-%d");else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$(date -r $folder"/declined.txt" "+%Y-%m-%d");elif [ -f $folder"/interview.txt" ];then echo "interview, "$(date -r $folder"/interview.txt" "+%Y-%m-%d");else echo "pending, ";fi) >> profDocs/submission-summary.csv;done
   725  history > profDocs/commands.txt
+  726  cat profDocs/submission-summary.csv
+  727  tail -n5 profDocs/commands.txt
+  728  tail -n2 profDocs/commands.txt | head -n1
+  729  IFS=' ' read -r -a array <<< "$(tail -n2 profDocs/commands.txt | head -n1)" && echo "${array[1]}"
+  730  IFS='724' read -r -a array <<< "$(tail -n2 profDocs/commands.txt | head -n1)" && echo "${array[1]}"
+  731  IFS='724' read -r -a array <<< "$(tail -n2 profDocs/commands.txt | head -n1)" && echo "${array[0]}"
+  732  tail -n2 profDocs/commands.txt | head -n1 > profDocs/updateSubmissionSummary.sh
+  733  nano profDocs/updateSubmissionSummary.sh
+  734  ./push.sh profDocs master
+  735  counter=0;submitted=0;declined=0;interview=0;pending=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}") | tr '-' ' ')", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}") | tr '-' ' ')", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$((++submitted));else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$((++declined));elif [ -f $folder"/interview.txt" ];then echo "interview, "$((++interview));else echo "pending, "$((++pending));fi);done;echo $submitted" submitted, "$pending" pending, "$interview" interviewed, "$declined" declined" > profDocs/submissions-review.csv
+  736  cat profDocs/submission-review.csv
+  737  cat profDocs/submissions-review.csv
+  738  echo $pending
+  739  $pending + 1
+  740  $($pending + 1)
+  741  echo $($pending + 1)
+  742  expr $pending + 1
+  743  pending=$(expr $pending + 1)
+  744  echo $pending
+  745  pending=$(expr $pending + 1)
+  746  echo $pending
+  747  pending=$(expr $pending + 1)
+  748  echo $pending
+  749  echo " , company, role, submitted, on, status, updated on" > profDocs/submissions-summary.csv;counter=0;submitted=0;declined=0;interview=0;pending=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}") | tr '-' ' ')", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}") | tr '-' ' ')", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$(date -r $folder"/DiStasioLuca-cover.pdf" "+%Y-%m-%d") && submitted=$(expr $submitted + 1);else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$(date -r $folder"/declined.txt" "+%Y-%m-%d") && declined=$(expr $declined + 1);elif [ -f $folder"/interview.txt" ];then echo "interview, "$(date -r $folder"/interview.txt" "+%Y-%m-%d") && interview=$(expr $interview + 1);else echo "pending, " && pending=$(expr $pending +1);fi) >> profDocs/submissions-summary.csv;done;echo $submitted" submitted, "$pending" pending, "$interview" interviewed, "$declined" declined" > profDocs/submissions-review.csv
+  750  echo " , company, role, submitted, on, status, updated on" > profDocs/submissions-summary.csv;counter=0;submitted=0;declined=0;interview=0;pending=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}") | tr '-' ' ')", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}") | tr '-' ' ')", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$(date -r $folder"/DiStasioLuca-cover.pdf" "+%Y-%m-%d") && submitted=$(expr $submitted + 1);else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$(date -r $folder"/declined.txt" "+%Y-%m-%d") && declined=$(expr $declined + 1);elif [ -f $folder"/interview.txt" ];then echo "interview, "$(date -r $folder"/interview.txt" "+%Y-%m-%d") && interview=$(expr $interview + 1);else echo "pending, " && pending=$(expr $pending +1);fi) >> profDocs/submissions-summary.csv;done;echo $submitted" submitted, "$pending" pending, "$interview" interviewed, "$declined" declined" > profDocs/submissions-review.csv
+  751  pending=$(expr $pending + 1)
+  752  echo $pending
+  753  submitted=$(expr $submitted + 1)
+  754  echo $submitted
+  755  cat profDocs/submissions-summary.csv
+  756  echo " , company, role, submitted, on, status, updated on" > profDocs/submissions-summary.csv;counter=0;submitted=0;declined=0;interview=0;pending=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}") | tr '-' ' ')", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}") | tr '-' ' ')", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$(date -r $folder"/DiStasioLuca-cover.pdf" "+%Y-%m-%d") && submitted=$(expr $submitted + 1);else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$(date -r $folder"/declined.txt" "+%Y-%m-%d") && declined=$(expr $declined + 1);elif [ -f $folder"/interview.txt" ];then echo "interview, "$(date -r $folder"/interview.txt" "+%Y-%m-%d") && interview=$(expr $interview + 1);else echo "pending, " && pending=$(expr $pending +1);fi) >> profDocs/submissions-summary.csv;done;echo $submitted" submitted, "$pending" pending, "$interview" interviewed, "$declined" declined" > profDocs/submissions-review.csv
+  757  cat profDocs/submissions-review.csv
+  758  echo " , company, role, submitted, on, status, updated on" > profDocs/submissions-summary.csv;counter=0;submitted=0;declined=0;interview=0;pending=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}") | tr '-' ' ')", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}") | tr '-' ' ')", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$(date -r $folder"/DiStasioLuca-cover.pdf" "+%Y-%m-%d") && submitted=$( expr $submitted + 1 );else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$(date -r $folder"/declined.txt" "+%Y-%m-%d") && declined=$( expr $declined + 1 );elif [ -f $folder"/interview.txt" ];then echo "interview, "$(date -r $folder"/interview.txt" "+%Y-%m-%d") && interview=$( expr $interview + 1 );else echo "pending, " && pending=$( expr $pending +1 );fi) >> profDocs/submissions-summary.csv;done;echo $submitted" submitted, "$pending" pending, "$interview" interviewed, "$declined" declined" > profDocs/submissions-review.csv
+  759  cat profDocs/submissions-review.csv
+  760  echo " , company, role, submitted, on, status, updated on" > profDocs/submissions-summary.csv;counter=0;submitted=0;declined=0;interview=0;pending=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}") | tr '-' ' ')", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}") | tr '-' ' ')", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$(date -r $folder"/DiStasioLuca-cover.pdf" "+%Y-%m-%d") && submitted=$(($submitted+1));else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$(date -r $folder"/declined.txt" "+%Y-%m-%d") && declined=$(($declined+1));elif [ -f $folder"/interview.txt" ];then echo "interview, "$(date -r $folder"/interview.txt" "+%Y-%m-%d") && interview=$(($interview+1));else echo "pending, " && pending=$(($pending+1));fi) >> profDocs/submissions-summary.csv;done;echo $submitted" submitted, "$pending" pending, "$interview" interviewed, "$declined" declined" > profDocs/submissions-review.csv
+  761  history > profDocs/commands.txt
+  762  tail -n2 profDocs/commands.txt | head -n1 > profDocs/updateSubmissionSummary.sh
+  763  cat profDocs/submissions-review.csv
+  764  cat profDocs/submissions-summary.csv
+  765  echo " , company, role, submitted, on, status, updated on" > profDocs/submissions-summary.csv;counter=0;submitted=0;declined=0;interview=0;pending=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}") | tr '-' ' ')", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}") | tr '-' ' ')", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$(date -r $folder"/DiStasioLuca-cover.pdf" "+%Y-%m-%d") && submitted=$((submitted+1));else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$(date -r $folder"/declined.txt" "+%Y-%m-%d") && declined=$((declined+1));elif [ -f $folder"/interview.txt" ];then echo "interview, "$(date -r $folder"/interview.txt" "+%Y-%m-%d") && interview=$((interview+1));else echo "pending, " && pending=$((pending+1));fi) >> profDocs/submissions-summary.csv;done;echo $submitted" submitted, "$pending" pending, "$interview" interviewed, "$declined" declined" > profDocs/submissions-review.csv
+  766  history > profDocs/commands.txt
+  767  tail -n2 profDocs/commands.txt | head -n1 > profDocs/updateSubmissionSummary.sh
+  768  cat profDocs/submissions-review.csv
+  769  echo $pending
+  770  pending=$((pending+1))
+  771  echo $pending
+  772  pending=$((pending+1))
+  773  echo $pending
+  774  pending=$((pending+1))
+  775  echo $pending
+  776  echo " , company, role, submitted, on, status, updated on" > profDocs/submissions-summary.csv;counter=0;submitted=0;declined=0;interview=0;pending=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}") | tr '-' ' ')", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}") | tr '-' ' ')", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$(date -r $folder"/DiStasioLuca-cover.pdf" "+%Y-%m-%d"); submitted=$((submitted+1));else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$(date -r $folder"/declined.txt" "+%Y-%m-%d"); declined=$((declined+1));elif [ -f $folder"/interview.txt" ];then echo "interview, "$(date -r $folder"/interview.txt" "+%Y-%m-%d"); interview=$((interview+1));else echo "pending, "; pending=$((pending+1));fi) >> profDocs/submissions-summary.csv;done;echo $submitted" submitted, "$pending" pending, "$interview" interviewed, "$declined" declined" > profDocs/submissions-review.csv
+  777  history > profDocs/commands.txt
+  778  tail -n2 profDocs/commands.txt | head -n1 > profDocs/updateSubmissionSummary.sh
+  779  cat profDocs/submissions-review.csv
+  780  echo $pending
+  781  echo " , company, role, submitted, on, status, updated on" > profDocs/submissions-summary.csv;counter=0;submitted=0;declined=0;interview=0;pending=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}") | tr '-' ' ')", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}") | tr '-' ' ')", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$(date -r $folder"/DiStasioLuca-cover.pdf" "+%Y-%m-%d"); submitted=$((submitted+1));else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$(date -r $folder"/declined.txt" "+%Y-%m-%d"); declined=$((declined+1));elif [ -f $folder"/interview.txt" ];then echo "interview, "$(date -r $folder"/interview.txt" "+%Y-%m-%d"); interview=$((interview+1));else echo "pending, "; pending=$((pending+1));fi);done;echo $submitted" submitted, "$pending" pending, "$interview" interviewed, "$declined" declined" > profDocs/submissions-review.csv
+  782  echo $pending
+  783  echo " , company, role, submitted, on, status, updated on" > profDocs/submissions-summary.csv;counter=0;submitted=0;declined=0;interview=0;pending=0;for folder in profDocs/submissions/*;do if [ -f $folder"/submitted.txt" ];then submitted=$((submitted+1));fi;if [ -f $folder"/declined.txt" ];then declined=$((declined+1));elif [ -f $folder"/interview.txt" ];then interview=$((interview+1));else pending=$((pending+1));fi;echo $((++counter))", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}") | tr '-' ' ')", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}") | tr '-' ' ')", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$(date -r $folder"/DiStasioLuca-cover.pdf" "+%Y-%m-%d");else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$(date -r $folder"/declined.txt" "+%Y-%m-%d");elif [ -f $folder"/interview.txt" ];then echo "interview, "$(date -r $folder"/interview.txt" "+%Y-%m-%d");else echo "pending, ";fi) >> profDocs/submissions-summary.csv;done;echo $submitted" submitted, "$pending" pending, "$interview" interviewed, "$declined" declined" > profDocs/submissions-review.csv
+  784  history > profDocs/commands.txt
+  785  tail -n2 profDocs/commands.txt | head -n1 > profDocs/updateSubmissionSummary.sh
+  786  cat profDocs/submissions-summary.csv
+  787  cat profDocs/submissions-review.csv
+  788  echo ($pending/$submitted)
+  789  echo $(($pending/$submitted))
+  790  echo $(($submitted/$pending))
+  791  bc -l <<< '100/3'
+  792  bc -l <<< $submitted/$pending
+  793  bc <<< $submitted/$pending
+  794  bc -l <<< 1-$submitted/$pending
+  795* bc -l <<< $(($interviewed+$declined))
+  796  bc -l <<< 100*$(($interviewed+$declined))/$submitted
+  797  bc<<< 100*$(($interviewed+$declined))/$submitted
+  798  bc <<< 100*$declined/$(($interviewed+$declined))
+  799  bc -l <<< 100*$declined/$(($interviewed+$declined))
+  800  bc -l <<< $declined/$(($interviewed+$declined))
+  801  bc -l <<< $declined/$(($interview+$declined))
+  802  bc -l <<< 100*$declined/$(($interview+$declined))
+  803  bc -l <<< 100*$interview/$(($interview+$declined))
+  804  bc -l <<< 100*$(($interview+$declined))/$submitted
+  805  bc <<< 100*$(($interview+$declined))/$submitted
+  806  bc <<< 100*$interview/$(($interview+$declined))
+  807  echo " , company, role, submitted, on, status, updated on" > profDocs/submissions-summary.csv;counter=0;submitted=0;declined=0;interview=0;pending=0;for folder in profDocs/submissions/*;do if [ -f $folder"/submitted.txt" ];then submitted=$((submitted+1));fi;if [ -f $folder"/declined.txt" ];then declined=$((declined+1));elif [ -f $folder"/interview.txt" ];then interview=$((interview+1));else pending=$((pending+1));fi;echo $((++counter))", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}") | tr '-' ' ')", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}") | tr '-' ' ')", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$(date -r $folder"/DiStasioLuca-cover.pdf" "+%Y-%m-%d");else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$(date -r $folder"/declined.txt" "+%Y-%m-%d");elif [ -f $folder"/interview.txt" ];then echo "interview, "$(date -r $folder"/interview.txt" "+%Y-%m-%d");else echo "pending, ";fi) >> profDocs/submissions-summary.csv;done;echo $submitted" submitted, "$pending" pending, "$interview" interviewed, "$declined" declined" > profDocs/submissions-review.csv;echo $(bc <<< 100*$(($interview+$declined))/$submitted)"% of submissions received a response, of this "$(bc <<< 100*$interview/$(($interview+$declined)))" was positive (invitation to interview)" >> profDocs/submissions-review.csv;cat profDocs/submissions-review.csv
+  808  echo " , company, role, submitted, on, status, updated on" > profDocs/submissions-summary.csv;counter=0;submitted=0;declined=0;interview=0;pending=0;for folder in profDocs/submissions/*;do if [ -f $folder"/submitted.txt" ];then submitted=$((submitted+1));fi;if [ -f $folder"/declined.txt" ];then declined=$((declined+1));elif [ -f $folder"/interview.txt" ];then interview=$((interview+1));else pending=$((pending+1));fi;echo $((++counter))", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}") | tr '-' ' ')", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}") | tr '-' ' ')", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$(date -r $folder"/DiStasioLuca-cover.pdf" "+%Y-%m-%d");else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$(date -r $folder"/declined.txt" "+%Y-%m-%d");elif [ -f $folder"/interview.txt" ];then echo "interview, "$(date -r $folder"/interview.txt" "+%Y-%m-%d");else echo "pending, ";fi) >> profDocs/submissions-summary.csv;done;echo $submitted" submitted, "$pending" pending, "$interview" interviewed, "$declined" declined" > profDocs/submissions-review.csv;echo $(bc <<< 100*$(($interview+$declined))/$submitted)"% of submissions received a response, "$(bc <<< 100*$interview/$(($interview+$declined)))"% of this was positive (invitation to interview)" >> profDocs/submissions-review.csv;cat profDocs/submissions-review.csv
+  809  history > profDocs/commands.txt
+  810  tail -n2 profDocs/commands.txt | head -n1 > profDocs/updateSubmissionSummary.sh
+  811  nano profDocs/updateSubmissionSummary.sh
+  812  history > profDocs/commands.txt
+  813  tail -n10 profDocs/commands.txt
+  814  tail -n5 profDocs/commands.txt
+  815  tail -n5 profDocs/commands.txt | head -n1
+  816  tail -n2 profDocs/commands.txt | head -n1 > profDocs/updateSubmissionSummary.sh
+  817  echo " , company, role, submitted, on, status, updated on" > profDocs/submissions-summary.csv;counter=0;submitted=0;declined=0;interview=0;pending=0;for folder in profDocs/submissions/*;do if [ -f $folder"/submitted.txt" ];then submitted=$((submitted+1));fi;if [ -f $folder"/declined.txt" ];then declined=$((declined+1));elif [ -f $folder"/interview.txt" ];then interview=$((interview+1));else pending=$((pending+1));fi;echo $((++counter))", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}") | tr '-' ' ')", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}") | tr '-' ' ')", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$(date -r $folder"/DiStasioLuca-cover.pdf" "+%Y-%m-%d");else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$(date -r $folder"/declined.txt" "+%Y-%m-%d");elif [ -f $folder"/interview.txt" ];then echo "interview, "$(date -r $folder"/interview.txt" "+%Y-%m-%d");else echo "pending, ";fi) >> profDocs/submissions-summary.csv;done;echo $submitted" submitted, "$pending" pending, "$interview" interviewed, "$declined" declined" > profDocs/submissions-review.csv;echo $(bc <<< 100*$(($interview+$declined))/$submitted)"% of submissions received a response, "$(bc <<< 100*$interview/$(($interview+$declined)))"% of this was positive (invitation to interview)" >> profDocs/submissions-review.csv;cat profDocs/submissions-review.csv
+  818  history > profDocs/commands.txt
