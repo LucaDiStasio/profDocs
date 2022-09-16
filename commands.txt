@@ -1,0 +1,500 @@
+  226  ./push.sh KAUST master
+  227  ./push.sh KAUST master
+  228  ./push.sh KAUST master
+  229  ./push.sh KAUST master
+  230  ./push.sh KAUST master
+  231  ./push.sh KAUST master
+  232  ./push.sh KAUST master
+  233  ./push.sh profDocs master
+  234  ./push.sh profDocs master
+  235  ./push.sh profDocs master
+  236  ./push.sh profDocs master
+  237  ./push.sh KAUST master
+  238  ./push.sh KAUST master
+  239  ./push.sh KAUST master
+  240  ./push.sh KAUST master
+  241  python
+  242  ./push.sh KAUST master
+  243  ./push.sh KAUST master
+  244  ./push.sh KAUST master
+  245  ./push.sh KAUST master
+  246  ./push.sh KAUST master
+  247  ./push.sh KAUST master
+  248  ./push.sh KAUST master
+  249  ./push.sh KAUST master
+  250  ./push.sh KAUST master
+  251  ./push.sh KAUST master
+  252  ./push.sh KAUST master
+  253  ./push.sh KAUST master
+  254  ./push.sh KAUST master
+  255  ./push.sh KAUST master
+  256  ./push.sh KAUST master
+  257  ./push.sh KAUST master
+  258  ./push.sh KAUST master
+  259  ./push.sh KAUST master
+  260  ./push.sh KAUST master
+  261  ./push.sh KAUST master
+  262  ./push.sh KAUST master
+  263  ./push.sh KAUST master
+  264  ./push.sh KAUST master
+  265  ./push.sh KAUST master
+  266  ./push.sh KAUST master
+  267  ./push.sh KAUST master
+  268  ./push.sh KAUST master
+  269  ./push.sh KAUST master
+  270  ./push.sh KAUST master
+  271  ./push.sh KAUST master
+  272  ./push.sh KAUST master
+  273  ./push.sh KAUST master
+  274  ./push.sh KAUST master
+  275  ./push.sh KAUST master
+  276  ./push.sh KAUST master
+  277  ./push.sh KAUST master
+  278  ./push.sh KAUST master
+  279  ./push.sh KAUST master
+  280  ./push.sh KAUST master
+  281  ./push.sh KAUST master
+  282  ./push.sh KAUST master
+  283  ./push.sh KAUST master
+  284  ./push.sh KAUST master
+  285  ./push.sh KAUST master
+  286  ./push.sh KAUST master
+  287  ./push.sh KAUST master
+  288  ./push.sh KAUST master
+  289  ./push.sh KAUST master
+  290  ./push.sh KAUST master
+  291  ./push.sh KAUST master
+  292  ./push.sh KAUST master
+  293  ./push.sh KAUST master
+  294  ./push.sh KAUST master
+  295  ./push.sh KAUST master
+  296  ./push.sh KAUST master
+  297  ./push.sh KAUST master
+  298  python
+  299  ./push.sh KAUST master
+  300  ./push.sh KAUST master
+  301  ./push.sh KAUST master
+  302  ./push.sh KAUST master
+  303  ./push.sh KAUST master
+  304  ./push.sh KAUST master
+  305  ./push.sh KAUST master
+  306  ./push.sh KAUST master
+  307  ./push.sh KAUST master
+  308  python
+  309  python
+  310  python
+  311  python
+  312  ./push.sh KAUST master
+  313  ./push.sh KAUST master
+  314  ./push.sh KAUST master
+  315  ./push.sh KAUST master
+  316  ./push.sh KAUST master
+  317  ./push.sh KAUST master
+  318  ./push.sh KAUST master
+  319  ./push.sh KAUST master
+  320  ./push.sh KAUST master
+  321  ./push.sh KAUST master
+  322  ./push.sh KAUST master
+  323  ./push.sh profDocs master
+  324  ./push.sh profDocs master
+  325  ./push.sh profDocs master
+  326  ./push.sh KAUST master
+  327  ./push.sh KAUST master
+  328  ./push.sh KAUST master
+  329  ./push.sh KAUST master
+  330  ./push.sh KAUST master
+  331  ./push.sh KAUST master
+  332  ./push.sh KAUST master
+  333  python
+  334  ./push.sh KAUST master
+  335  ./push.sh KAUST master
+  336  ./push.sh KAUST master
+  337  ./push.sh KAUST master
+  338  ./push.sh KAUST master
+  339  ./push.sh KAUST master
+  340  ./push.sh KAUST master
+  341  ./push.sh KAUST master
+  342  ./push.sh KAUST master
+  343  ./push.sh KAUST master
+  344  ./push.sh KAUST master
+  345  ./push.sh profDocs master
+  346  ./push.sh profDocs master
+  347  ./push.sh profDocs master
+  348  ./push.sh KAUST master
+  349  ./push.sh KAUST master
+  350  ./push.sh KAUST master
+  351  ./push.sh KAUST master
+  352  ./push.sh KAUST master
+  353  python
+  354  python
+  355  ./push.sh KAUST master
+  356  ./push.sh KAUST master
+  357  ./push.sh KAUST master
+  358  ./push.sh KAUST master
+  359  ./push.sh KAUST master
+  360  ./push.sh KAUST master
+  361  ./push.sh KAUST master
+  362  ./push.sh KAUST master
+  363  ./push.sh KAUST master
+  364  ./push.sh KAUST master
+  365  ./push.sh KAUST master
+  366  ./push.sh KAUST master
+  367  ./push.sh profDocs master
+  368  ./push.sh KAUST master
+  369  ./push.sh KAUST master
+  370  ./push.sh KAUST master
+  371  ./push.sh KAUST master
+  372  /Users/distasl/Downloads/cpdf-binaries-master/OSX-Intel/cpdf ; exit;
+  373  /Users/distasl/Downloads/cpdf-binaries-master/OSX-Intel/cpdf ; exit;
+  374  /Users/distasl/Downloads/cpdf-binaries-master/OSX-ARM/cpdf ; exit;
+  375  /Users/distasl/Downloads/cpdf-binaries-master/OSX-Intel/cpdf ; exit;
+  376  ls
+  377  cd pending
+  378  mkdir ESA-ESTEC-SpaceMechanismsEngineer && cp ../compl*/Solico/*CV.pdf ESA-ESTEC* && ls ESA-ESTEC*
+  379  mkdir GAC-ConsultantInnovationFunding && cp ../compl*/Solico/*CV.pdf GAC* && ls GAC*
+  380  mkdir Capgemini-ComputationalEngineer && cp ../compl*/Solico/*CV.pdf Capgemini* && ls Capgemini*
+  381  mkdir Voith-RDEngineer && cp ../compl*/Solico/*CV.pdf Voith* && cp ../../eng*/cover*/cover*template.tex && ls Voith*
+  382  mkdir Voith-RDEngineer && cp ../compl*/Solico/*CV.pdf Voith* && cp ../../eng*/cover*/cover*template.tex Voith* && ls Voith*
+  383  cp ../compl*/Solico/*CV.pdf Voith* && cp ../../eng*/cover*/cover*template.tex Voith* && ls *
+  384  echo "mkdir "$1" && cp ../compl*/Solico/*CV.pdf "$1" && cp ../../eng*/cover*/cover*template.tex "$1" && ls "$1 > createSubmissionFolder.sh
+  385  cat createSubmissionFolder.sh
+  386  echo "mkdir $1 && cp ../compl*/Solico/*CV.pdf $1 && cp ../../eng*/cover*/cover*template.tex $1 && ls $1" > createSubmissionFolder.sh
+  387  cat createSubmissionFolder.sh
+  388  nano createSubmissionFolder.sh
+  389  chmod +x createSubmissionFolder.sh
+  390  createSubmissionFolder.sh AFRY-FutureCitiesConsultants
+  391  ./createSubmissionFolder.sh AFRY-FutureCitiesConsultants
+  392  ./createSubmissionFolder.sh Quental-ProgramadorRPythonIDremoto
+  393  ./createSubmissionFolder.sh UNIR-InvestigadorSeior
+  394  ./createSubmissionFolder.sh Sia-ConsultantHydrogen
+  395  ./createSubmissionFolder.sh FARO-ResearchManager
+  396  ./createSubmissionFolder.sh ModelingSimulationEngineer
+  397  ./createSubmissionFolder.sh 3M-ApplicationEngineerFEA
+  398  ./createSubmissionFolder.sh Rheinmetall-BerechnungsingenieurFE
+  399  ./createSubmissionFolder.sh Isar-CompositeStressAnalysisEngineer
+  400  cp ../../eng*/cover*/cover*template.tex && ls Capgemini*
+  401  cp ../../eng*/cover*/cover*template.tex Capgemini*
+  402  cp ../../eng*/cover*/fortysecondscv.cls Capgemini*
+  403  cp ../../eng*/cover*/ValeLuca-29.jpg Capgemini*
+  404  cp ../../eng*/cover*/signature.png Capgemini*
+  405  cpdf -help
+  406  /Users/distasl/Downloads/cpdf-binaries-master/OSX-Intel/cpdf -help
+  407  cd Cap*
+  408  /Users/distasl/Downloads/cpdf-binaries-master/OSX-Intel/cpdf *CV.pdf cover*.pdf DiStasioLuca-coverAndCV.pdf
+  409  /Users/distasl/Downloads/cpdf-binaries-master/OSX-Intel/cpdf *CV.pdf cover*.pdf -o DiStasioLuca-coverAndCV.pdf
+  410  /Users/distasl/Downloads/cpdf-binaries-master/OSX-Intel/cpdf cover*.pdf *CV.pdf -o DiStasioLuca-coverAndCV.pdf
+  411  rm coverAND*.pdf
+  412  rm *coverAND*.pdf
+  413  ls
+  414  rm *coverAnd*.pdf
+  415  /Users/distasl/Downloads/cpdf-binaries-master/OSX-Intel/cpdf cover*.pdf *CV.pdf -o DiStasioLuca-coverAndCV.pdf
+  416  rm *coverAnd*.pdf
+  417  /Users/distasl/Downloads/cpdf-binaries-master/OSX-Intel/cpdf cover*.pdf *CV.pdf -o DiStasioLuca-coverAndCV.pdf
+  418  rm *coverAnd*.pdf
+  419  /Users/distasl/Downloads/cpdf-binaries-master/OSX-Intel/cpdf cover*.pdf *CV.pdf -o DiStasioLuca-coverAndCV.pdf
+  420  cd ..
+  421  cp Cap*/ValeLuca-29.jpg Cap*/fortysec*.cls Cap*/Signature* Voith*
+  422  cp Cap*/ValeLuca-29.jpg Cap*/fortysec*.cls Cap*/signature* Voith*
+  423  cp Cap*/ValeLuca-29.jpg Cap*/fortysec Voith*/cover*.tex Voith*
+  424  cd Voith*
+  425  cp cover*.pdf DiStasioLuca-coverLetter.pdf
+  426  ls
+  427  cd ..
+  428  cp Cap*/ValeLuca-29.jpg Cap*/fortysec*.cls Cap*/Signature* Voith*/cover*.tex FARO*
+  429  cp Cap*/ValeLuca-29.jpg Cap*/fortysec*.cls Cap*/signature* Voith*/cover*.tex FARO*
+  430  cd FARO*
+  431  cp cover*.pdf DiStasioLuca-coverLetter.pdf
+  432  ls
+  433  cd ..
+  434  cp Cap*/ValeLuca-29.jpg Cap*/fortysec*.cls Cap*/signature* Voith*/cover*.tex ISAR*
+  435  cp Cap*/ValeLuca-29.jpg Cap*/fortysec*.cls Cap*/signature* Voith*/cover*.tex Isar*
+  436  cd Isar*
+  437  ls
+  438  cp cover*.pdf DiStasioLuca-coverLetter.pdf
+  439  ls
+  440  ./push.sh profDocs master
+  441  ./push.sh profDocs master
+  442  ./push.sh profDocs master
+  443  ./push.sh KAUST master
+  444  ./push.sh KAUST master
+  445  ./push.sh KAUST master
+  446  ./push.sh KAUST master
+  447  ./push.sh KAUST master
+  448  ./push.sh KAUST master
+  449  ./push.sh KAUST master
+  450  ./push.sh KAUST master
+  451  ./push.sh KAUST master
+  452  cd Doc*/WD/KAUST
+  453  ls
+  454  cd tex
+  455  ls
+  456  mkdir WCCM-APCOM-Yokohama2022
+  457  mkdir ESMC11-Galway2022
+  458  /Users/distasl/Downloads/cpdf-binaries-master/OSX-Intel/cpdf ; exit;
+  459  cd ..
+  460  cat createSubmissionFolder.sh
+  461  nano createSubmissionFolder.sh
+  462  ./createSubmissionFolder.sh Wolfram-PrincipalConsultant
+  463  cat 01*md
+  464  cat 01*md
+  465  cat 01*md
+  466  cat 01*md
+  467  cat 01*md
+  468  cat 01*md
+  469  cat 01*md
+  470  cat 01*md
+  471  cat 01*md
+  472  pwd
+  473  cd ../..
+  474  pwd
+  475  cd KAUST/excel
+  476  ls
+  477  mkdir loadedPlaneStressCrack
+  478  ls
+  479  ls ../../Local
+  480  mv ../../Local/PressureCrackCrackFaceData.xlsx ./loadedPlaneStressCrack/pressureCrackFaceAnalysis.xlsx
+  481  ls
+  482  ls ./*Crack
+  483  ls
+  484  mkdir loadedPlaneStressCrack/ppc-0_25Rc
+  485  mkdir loadedPlaneStressCrack/ppc-Rc
+  486  mkdir loadedPlaneStressCrack/ppc-R2
+  487  mkdir loadedPlaneStressCrack/ppc-R3
+  488  mkdir loadedPlaneStressCrack/ppc-R4
+  489  mkdir loadedPlaneStressCrack/fpc
+  490  mkdir loadedPlaneStressCrack/clc-0_25Rc
+  491  mkdir loadedPlaneStressCrack/clc-Rc
+  492  for i in 0_1 0_5 1; do mv "../../Local/planeStress-"$i"MPa-lowerCrackFaceData-0_25Rc.csv" ./loadedPlaneStressCrack/ppc-0_25Rc; done
+  493  ls loadedPlaneStressCrack/ppc-0_25Rc
+  494  ls
+  495  mkdir loadedPlaneStressCrack/modeIII-thermal
+  496  mkdir loadedPlaneStressCrack/modeIII-thermal/cl0_1
+  497  mkdir loadedPlaneStressCrack/modeIII-thermal/cl1
+  498  mkdir loadedPlaneStressCrack/modeIII-thermal/cl10
+  499  /Users/distasl/opt/anaconda3/bin/jupyter_mac.command ; exit;
+  500  /Users/distasl/opt/anaconda3/bin/jupyter_mac.command ; exit;
+  501  ./push.sh profDocs master
+  502  ./push.sh profDocs master
+  503  ./push.sh profDocs master
+  504  ./push.sh profDocs master
+  505  ./push.sh profDocs master
+  506  ./push.sh profDocs master
+  507  ./push.sh profDocs master
+  508  ./push.sh profDocs master
+  509  ./push.sh profDocs master
+  510  ./push.sh profDocs master
+  511  ./push.sh profDocs master
+  512  ls ./profDocs/english/resume
+  513  cp ./profDocs/english/resume/short-industry/ResearchDevelopment/DiStasioLuca-CV.docx ./profDocs/english/resume/long-academic
+  514  ./push.sh profDocs master
+  515  ./push.sh profDocs master
+  516  ./push.sh profDocs master
+  517  ./push.sh profDocs master
+  518  ./push.sh profDocs master
+  519  ./push.sh profDocs master
+  520  ./push.sh profDocs master
+  521  pwd
+  522  ls profDocs
+  523  ls profDocs/submissions
+  524  rm -r profDocs/submissions/pending
+  525  rm -r profDocs/submissions/completed
+  526  ls profDocs/submissions
+  527  rm profDocs/submissions/*.csv
+  528  ls profDocs/submissions
+  529  ls profDocs/submissions
+  530  mkdir profDocs/submissions/prereview_community-manager
+  531  cp profDocs/english/resume/long-academic/DiStasioLuca-CV.docx profDocs/submissions/prereview_community-manager
+  532  mkdir profDocs/submissions/vtt_research-senior-scientist_offshore-wind-power-freezing-sea-areas
+  533  cp profDocs/english/resume/long-academic/DiStasioLuca-CV.docx profDocs/submissions/vtt_research-senior-scientist_offshore-wind-power-freezing-sea-areas
+  534  ./push.sh profDocs master
+  535  ./push.sh profDocs master
+  536  ./push.sh profDocs master
+  537  ./push.sh profDocs master
+  538  mkdir profDocs/submissions/prereview_community-manager
+  539  mkdir profDocs/submissions/hempel_innovation-manager
+  540  mkdir profDocs/submissions/siemens-gamesa_innovation-manager
+  541  cp profDocs/submissions/vtt_research-senior-scientist_offshore-wind-power-freezing-sea-areas/DiStasioLuca-CV.docx profDocs/submissions/hempel_innovation-manager
+  542  ./push.sh profDocs master
+  543  cp profDocs/submissions/vtt_research-senior-scientist_offshore-wind-power-freezing-sea-areas/DiStasioLuca-CV.docx profDocs/submissions/vtt_research-senior-scientist_offshore-wind-power-freezing-sea-areas/DiStasioLuca-cover.docx
+  544  cp profDocs/submissions/hempel_innovation-manager/DiStasioLuca-CV.docx profDocs/submissions/siemens-gamesa_innovation-manager
+  545  cp profDocs/submissions/hempel_innovation-manager/DiStasioLuca-CV.pdf profDocs/submissions/siemens-gamesa_innovation-manager
+  546  touch profDocs/submissions/prereview_community-manager/submitted.txt
+  547  ./push.sh profDocs master
+  548  mkdir profDocs/submissions/lu_postdoc-computational-mechanics
+  549  ls profDocs/submissions/hempel_innovation-manager
+  550  cp profDocs/submissions/hempel_innovation-manager/DiStasioLuca-CV.docx profDocs/submissions/lu_postdoc-computational-mechanics
+  551  cp profDocs/submissions/hempel_innovation-manager/DiStasioLuca-CV.pdf profDocs/submissions/lu_postdoc-computational-mechanics
+  552  cp profDocs/submissions/vtt_research-senior-scientist_offshore-wind-power-freezing-sea-areas/DiStasioLuca-cover.docx profDocs/submissions/lu_postdoc-computational-mechanics
+  553  ./push.sh profDocs master
+  554  cp profDocs/submissions/vtt_research-senior-scientist_offshore-wind-power-freezing-sea-areas/DiStasioLuca-cover.docx profDocs/submissions/hempel_innovation-manager
+  555  touch profDocs/submissions/hempel_innovation-manager/submitted.txt
+  556  touch profDocs/submissions/vtt_research-senior-scientist_offshore-wind-power-freezing-sea-areas/submitted.txt
+  557  cp profDocs/submissions/hempel_innovation-manager/DiStasioLuca-cover.docx profDocs/submissions/siemens-gamesa_innovation-manager
+  558  touch profDocs/submissions/siemens-gamesa_innovation-manager/submitted.txt
+  559  mkdir profDocs/submissions/orsted_senior-innovation-manager
+  560  cp profDocs/submissions/siemens-gamesa_innovation-manager/DiStasioLuca-CV.docx profDocs/submissions/orsted_senior-innovation-manager
+  561  cp profDocs/submissions/siemens-gamesa_innovation-manager/DiStasioLuca-CV.pdf profDocs/submissions/orsted_senior-innovation-manager
+  562  cp profDocs/submissions/siemens-gamesa_innovation-manager/DiStasioLuca-cover.docx profDocs/submissions/orsted_senior-innovation-manager
+  563  touch profDocs/submissions/orsted_innovation-manager/submitted.txt
+  564  ./push.sh profDocs master
+  565  mkdir profDocs/submissions/grundfos_senior-concept-project-manager
+  566  cp profDocs/submissions/siemens-gamesa_innovation-manager/DiStasioLuca-cover.docx profDocs/submissions/grundfos_senior-concept-project-manager
+  567  cp profDocs/submissions/siemens-gamesa_innovation-manager/DiStasioLuca-CV.docx profDocs/submissions/grundfos_senior-concept-project-manager
+  568  cp profDocs/submissions/siemens-gamesa_innovation-manager/DiStasioLuca-CV.pdf profDocs/submissions/grundfos_senior-concept-project-manager
+  569  touch profDocs/submissions/orsted_senior-innovation-manager/submitted.txt
+  570  touch profDocs/submissions/grundfos_senior-concept-project-manager/submitted.txt
+  571  for folder in koppers_research-development-scientist resolvent_senior-modelling-engineer earth-security_project-development-manager mckinsey_digital-consultant elemed_research-development-manager danisense_research-development-manager grundfos_senior-concept-design-engineer grundfos_data-engineer grundfos_senior-product-development-engineer grundfos_software-engineering-application-developer grundfos_chief-engineer-modularization-standardization grundfos_senior-simulation-specialist siemens-gamesa_blade-materials-engineer dewa_senior-researcher nlesciencecenter_programme-director; do mkdir $folder;done
+  572  ls profDocs/submissions
+  573  ls
+  574  for folder in koppers_research-development-scientist resolvent_senior-modelling-engineer earth-security_project-development-manager mckinsey_digital-consultant elemed_research-development-manager danisense_research-development-manager grundfos_senior-concept-design-engineer grundfos_data-engineer grundfos_senior-product-development-engineer grundfos_software-engineering-application-developer grundfos_chief-engineer-modularization-standardization grundfos_senior-simulation-specialist siemens-gamesa_blade-materials-engineer dewa_senior-researcher nlesciencecenter_programme-director; do rm $folder;done
+  575  for folder in koppers_research-development-scientist resolvent_senior-modelling-engineer earth-security_project-development-manager mckinsey_digital-consultant elemed_research-development-manager danisense_research-development-manager grundfos_senior-concept-design-engineer grundfos_data-engineer grundfos_senior-product-development-engineer grundfos_software-engineering-application-developer grundfos_chief-engineer-modularization-standardization grundfos_senior-simulation-specialist siemens-gamesa_blade-materials-engineer dewa_senior-researcher nlesciencecenter_programme-director; do rm -r $folder;done
+  576  ls
+  577  for folder in koppers_research-development-scientist resolvent_senior-modelling-engineer earth-security_project-development-manager mckinsey_digital-consultant elemed_research-development-manager danisense_research-development-manager grundfos_senior-concept-design-engineer grundfos_data-engineer grundfos_senior-product-development-engineer grundfos_software-engineering-application-developer grundfos_chief-engineer-modularization-standardization grundfos_senior-simulation-specialist siemens-gamesa_blade-materials-engineer dewa_senior-researcher nlesciencecenter_programme-director; do mkdir "profDocs/submissions/"$folder;done
+  578  ls
+  579  ls profDocs/submissions
+  580  for folder in koppers_research-development-scientist resolvent_senior-modelling-engineer earth-security_project-development-manager mckinsey_digital-consultant elemed_research-development-manager danisense_research-development-manager grundfos_senior-concept-design-engineer grundfos_data-engineer grundfos_senior-product-development-engineer grundfos_software-engineering-application-developer grundfos_chief-engineer-modularization-standardization grundfos_senior-simulation-specialist siemens-gamesa_blade-materials-engineer dewa_senior-researcher nlesciencecenter_programme-director; do for ext in docx pdf; do cp "profDocs/submissions/siemens-gamesa_innovation-manager/DiStasioLuca-CV."$ext "profDocs/submissions/"$folder;done;done
+  581  for folder in koppers_research-development-scientist resolvent_senior-modelling-engineer earth-security_project-development-manager mckinsey_digital-consultant elemed_research-development-manager danisense_research-development-manager grundfos_senior-concept-design-engineer grundfos_data-engineer grundfos_senior-product-development-engineer grundfos_software-engineering-application-developer grundfos_chief-engineer-modularization-standardization grundfos_senior-simulation-specialist siemens-gamesa_blade-materials-engineer dewa_senior-researcher nlesciencecenter_programme-director; do  cp profDocs/submissions/siemens-gamesa_innovation-manager/DiStasioLuca-cover.docx "profDocs/submissions/"$folder;done
+  582  ./push.sh profDocs master
+  583  touch profDocs/submissions/danisense_research-development-manager/submitted.txt
+  584  ./push.sh profDocs master
+  585  touch profDocs/submissions/siemens-gamesa_blade-materials-engineer/submitted.txt
+  586  mkdir profDocs/submissions/siemens-gamesa_senior-mechanical-structural-engineer
+  587  touch profDocs/submissions/grundfos_senior-simulation-specialist/submitted.txt
+  588  for file in profDocs/siemens-gamesa_blade-materials-engineer/*; do cp $file profDocs/submissions/siemens-gamesa_senior-mechanical-structural-engineer;done
+  589  for file in profDocs/submissions/siemens-gamesa_blade-materials-engineer/*; do cp $file profDocs/submissions/siemens-gamesa_senior-mechanical-structural-engineer;done
+  590  touch profDocs/submissions/resolvent_senior-modelling-engineer/submitted.txt
+  591  mkdir profDocs/submissions/siemens-gamesa_blade-structural-engineer
+  592  for file in profDocs/submissions/siemens-gamesa_blade-materials-engineer/*; do cp $file profDocs/submissions/siemens-gamesa_blade-structural-engineer;done
+  593  touch profDocs/submissions/siemens-gamesa_blade-structural-engineer/submitted.txt
+  594  ./push.sh profDocs master
+  595  mkdir profDocs/submissions/siemens-gamesa_structural-composite-engineer
+  596  for file in profDocs/submissions/siemens-gamesa_blade-materials-engineer/*; do cp $file profDocs/submissions/siemens-gamesa_structural-composite-engineer;done
+  597  mkdir profDocs/submissions/siemens-gamesa_structural-engineer
+  598  for file in profDocs/submissions/siemens-gamesa_blade-materials-engineer/*; do cp $file profDocs/submissions/siemens-gamesa_structural-engineer;done
+  599  mkdir profDocs/submissions/dtu-skylab_consulting-development-engineer
+  600  ls
+  601  ls profDocs/submissions
+  602  touch profDocs/submissions/siemens-gamesa_blade-materials-engineer/declined.txt
+  603  for file in profDocs/submissions/danisense_research-development-manager/*; do cp $file profDocs/submissions/dtu-skylab_consulting-development-engineer;done
+  604  mkdir profDocs/submissions/nottingham-research-fellowship-2023
+  605  touch profDocs/submissions/dtu-skylab_consulting-development-engineer/submitted.txt
+  606  cp profDocs/submissions/dtu-skylab_consulting-development-engineer/DiStasioLuca-cover.docx profDocs/submissions/mckinsey_digital-consultant
+  607  touch profDocs/submissions/mckinsey_digital-consultant/submitted.txt
+  608  touch profDocs/submissions/elemed_research-development-manager/submitted.txt
+  609* mkdir profDocs/submissions/abb_
+  610  ls profDocs/submissions
+  611  for file in profDocs/submissions/hempel_innovation-manager/*;do cp $file profDocs/submissions/ansys_research-development-project-manager;done
+  612  touch profDocs/submissions/ansys_research-development-manager-project-manager/submitted.txt
+  613  ./push.sh profDocs master
+  614  mkdir profDocs/submissions/abb_research-development-project-manager
+  615  for file in profDocs/submissions/hempel_innovation-manager/*;do cp $file profDocs/submissions/abb_research-development-project-manager;done
+  616  touch profDocs/submissions/ansys_research-development-project-manager/submitted.txt
+  617  for folder in frontiers_journal-manager-phys-sciences-eng brinckmann_research-analyst nilfisk_research-development-mechanical-engineer amgen_senior-engineer-mathematical-modelling-simulation ibsen-photonics_mechanical-design-engineer; do mkdir "profDocs/submissions/"$folder;done
+  618  ./push.sh profDocs master
+  619  ls
+  620  ls profDocs/submissions
+  621  touch profDocs/submissions/grundfos_senior-simulation-specialist/declined.txt
+  622  for folder in frontiers_journal-manager-phys-sciences-eng brinckmann_research-analyst nilfisk_research-development-mechanical-engineer amgen_senior-engineer-mathematical-modelling-simulation ibsen-photonics_mechanical-design-engineer; do for ext in docx pdf;do cp "profDocs/submissions/hempel_innovation-manager/DiStasioLuca-CV."$ext "profDocs/submissions/"$folder;done;done
+  623  for folder in frontiers_journal-manager-phys-sciences-eng brinckmann_research-analyst nilfisk_research-development-mechanical-engineer amgen_senior-engineer-mathematical-modelling-simulation ibsen-photonics_mechanical-design-engineer; do for ext in docx;do cp "profDocs/submissions/hempel_innovation-manager/DiStasioLuca-cover."$ext "profDocs/submissions/"$folder;done;done
+  624  ./push.sh profDocs master
+  625  mkdir profDocs/submissions/invera-medical_research-development-engineer
+  626  for ext in docx pdf;do cp "profDocs/submissions/hempel_innovation-manager/DiStasioLuca-CV."$ext profDocs/submissions/invera-medical_research-development-engineer;done
+  627  for ext in docx;do cp "profDocs/submissions/nilfisk_research-development-mechanical-engineer/DiStasioLuca-cover."$ext profDocs/submissions/invera-medical_research-development-engineer;done
+  628  mkdir profDocs/submissions/torrot_research-development-engineer
+  629  for ext in docx;do cp "profDocs/submissions/nilfisk_research-development-mechanical-engineer/DiStasioLuca-cover."$ext profDocs/submissions/torrot_research-development-engineer;done
+  630  for ext in docx;do cp "profDocs/submissions/nilfisk_research-development-mechanical-engineer/DiStasioLuca-cover."$ext profDocs/submissions/torrot_research-development-engineer;done
+  631  mkdir profDocs/submissions/alpine_senior-simulation-development-engineer
+  632  for ext in docx pdf;do cp "profDocs/submissions/nilfisk_research-development-mechanical-engineer/DiStasioLuca-CV."$ext profDocs/submissions/torrot_research-development-engineer;done
+  633  for ext in docx pdf;do cp "profDocs/submissions/nilfisk_research-development-mechanical-engineer/DiStasioLuca-CV."$ext profDocs/submissions/alpine_senior-simulation-development-engineer;done
+  634  for ext in docx;do cp "profDocs/submissions/nilfisk_research-development-mechanical-engineer/DiStasioLuca-cover."$ext profDocs/submissions/alpine_senior-simulation-development-engineer;done
+  635  mkdir profDocs/submissions/bluefors_senior-mechanical-engineer
+  636  for ext in docx pdf;do cp "profDocs/submissions/nilfisk_research-development-mechanical-engineer/DiStasioLuca-CV."$ext profDocs/submissions/bluefors_senior-mechanical-engineer;done
+  637  for ext in docx;do cp "profDocs/submissions/nilfisk_research-development-mechanical-engineer/DiStasioLuca-cover."$ext profDocs/submissions/bluefors_senior-mechanical-engineer;done
+  638  touch profDocs/submissions/dewa_senior-researcher/submitted.txt
+  639  ./push.sh profDocs master
+  640  mkdir profDocs/submissions/linak_development-engineer
+  641  mkdir profDocs/submissions/man_design-engineer
+  642  ./push.sh profDocs master
+  643  mkdir profDocs/submissions/invisio_research-development-project-manager
+  644  ./push.sh profDocs master
+  645  mkdir profDocs/submissions/teknologisk-institut_mechanical-engineer
+  646  mkdir profDocs/submissions/teknologisk-institut_surface-technology-development-consultant
+  647  mkdir profDocs/submissions/amgen_senior-engineer-mechanical-design
+  648  mkdir profDocs/submissions/unicef_product-innovation-manager
+  649  mkdir profDocs/submissions/medtronic_research-development-program-manager
+  650  mkdir profDocs/submissions/medtronic_research-development-engineer
+  651  mkdir profDocs/submissions/expion_research-development-manager
+  652  ls
+  653  ls profDocs/submissions
+  654  touch profDocs/submissions/abb_research-development-project-manager/declined.txt
+  655  mkdir profDocs/submissions/vtt_research-senior-scientist-computational-materials-science
+  656  mkdir profDocs/submissions/silicon-austria-labs_senior-scientist-advanced-mems-modelling
+  657  ./push.sh profDocs master
+  658  mkdir profDocs/submissions/volt_research-development-manager
+  659  mkdir profDocs/submissions/hays_research-development-manager
+  660  mkdir profDocs/submissions/guided-solutions_research-development-manager
+  661  mkdir profDocs/submissions/guided-solutions_research-development-manager
+  662  ./push.sh profDocs master
+  663  mkdir profDocs/submissions/babcok-wilcox_research-development-engineer
+  664  mkdir profDocs/submissions/coloplast_research-development-material-scientist
+  665  ./push.sh profDocs master
+  666  mkdir profDocs/submissions/wattsuppower_mechanical-engineer
+  667  mkdir profDocs/submissions/lego_senior-mechanical-engineer
+  668  mkdir profDocs/submissions/lego_mechanical-engineer
+  669  ./push.sh profDocs master
+  670  mkdir profDocs/submissions/ukri_learning-development-practitioner
+  671  mkdir profDocs/submissions/rsgroup_learning-development-partner
+  672  mkdir profDocs/submissions/lego_digital-learning-manager
+  673  mkdir profDocs/submissions/integer_senior-research-development-engineer
+  674  ./push.sh profDocs master
+  675  mkdir KAUST/word
+  676  for folder in profDocs/submissions/*;do echo $folder;done
+  677  for folder in profDocs/submissions/*;do IFS='/' read -ra array <<< $folder && echo "${array[0]}";done
+  678  for folder in profDocs/submissions/*;do IFS='/' read -ra array <<< $folder && echo "${array}";done
+  679  for folder in profDocs/submissions/*;do IFS='/' read -ra array <<< $folder && echo "${array[1]}";done
+  680  for folder in profDocs/submissions/*;do IFS='/' read -ra array <<< $folder && echo "${array[2]}";done
+  681  for folder in profDocs/submissions/*;do IFS='/' read -ra array <<< $folder && echo ${array[2]};done
+  682  for folder in profDocs/submissions/*;do IFS='/' read -ra array <<< $folder && echo ${array[0]};done
+  683  for folder in profDocs/submissions/*;do IFS='/' read -r -a array <<< "$folder" && echo "${array[0]}";done
+  684  for folder in profDocs/submissions/*;do IFS='/' read -r -a array <<< "$folder" && echo "${array[1]}";done
+  685  for folder in profDocs/submissions/*;do IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}";done
+  686  for folder in profDocs/submissions/*;do echo $(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}");done
+  687  counter=0;for folder in profDocs/submissions/*;do echo $((counter++))", "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}");done
+  688  counter=0;for folder in profDocs/submissions/*;do echo $((counter++))", "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")", "$(if [ -f $folder"/submitted.txt" ];then echo submitted;fi);done
+  689  counter=0;for folder in profDocs/submissions/*;do echo $((counter++))", "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")", "$(if [ -f $folder"/submitted.txt" ];then echo yes;else echo no;fi);done
+  690  counter=0;for folder in profDocs/submissions/*;do echo $((counter++))", "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")", "$(if [ -f $folder"/submitted.txt" ];then echo yes;else echo no;fi)", "$(if [ -f $folder"/declined.txt" ];then echo declined;elseif [ -f $folder"/interview.txt" ];then echo interview;else echo pending;fi);done
+  691  mkdir KAUST/tex/notes-phase-field-asymptotics
+  692  touch KAUST/tex/notes-phase-field-asymptotics/notes-phase-field-asymptotics.tex
+  693  counter=0;for folder in profDocs/submissions/*;do echo $((counter++))", "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")", "$(if [ -f $folder"/submitted.txt" ];then echo yes;else echo no;fi)", "$(if [ -f $folder"/declined.txt" ];then echo declined;elif [ -f $folder"/interview.txt" ];then echo interview;else echo pending;fi);done
+  694  counter=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")", "$(if [ -f $folder"/submitted.txt" ];then echo yes;else echo no;fi)", "$(if [ -f $folder"/declined.txt" ];then echo declined;elif [ -f $folder"/interview.txt" ];then echo interview;else echo pending;fi);done
+  695* counter=0;pending=0;interview=0;declined=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")", "$(if [ -f $folder"/submitted.txt" ];then echo yes;else echo no;fi)", "$(if [ -f $folder"/declined.txt" ];then $echo declined;elif [ -f $folder"/interview.txt" ];then $((interview++)) && echo interview;else $((pending++)) && echo pending;fi);done;echo $counter" submitted, "$pending" pending, "$interview" interviewed, "$declined", declined"
+  696  counter=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")", "$(if [ -f $folder"/submitted.txt" ];then echo yes;else echo no;fi)", "$(if [ -f $folder"/declined.txt" ];then echo declined;elif [ -f $folder"/interview.txt" ];then echo interview;else echo pending;fi);done
+  697  counter=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")", "$(if [ -f $folder"/submitted.txt" ];then echo yes;else echo no;fi)", "$(if [ -f $folder"/declined.txt" ];then echo declined;elif [ -f $folder"/interview.txt" ];then echo interview;else echo pending;fi);done
+  698  echo " , company, role, submitted, status" > profDocs/submissions/submission-summary.csv;counter=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(IFS='_' read -r -a array <<< $(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}") && echo "${array[0]}")", "$(IFS='_' read -r -a array <<< $(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}") && echo "${array[1]}")", "$(if [ -f $folder"/submitted.txt" ];then echo yes;else echo no;fi)", "$(if [ -f $folder"/declined.txt" ];then echo declined;elif [ -f $folder"/interview.txt" ];then echo interview;else echo pending;fi);done
+  699  echo " , company, role, submitted, status" > profDocs/submissions/submission-summary.csv;counter=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}")", "$(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}")", "$(if [ -f $folder"/submitted.txt" ];then echo yes;else echo no;fi)", "$(if [ -f $folder"/declined.txt" ];then echo declined;elif [ -f $folder"/interview.txt" ];then echo interview;else echo pending;fi);done
+  700  echo " , company, role, submitted, status" > profDocs/submissions/submission-summary.csv;counter=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}")", "$(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}")", "$(if [ -f $folder"/submitted.txt" ];then echo yes;else echo no;fi)", "$(if [ -f $folder"/declined.txt" ];then echo declined;elif [ -f $folder"/interview.txt" ];then echo interview;else echo pending;fi) >> profDocs/submissions/submission-summary.csv;done
+  701  cat profDocs/submissions/submission-summary.csv
+  702  cat profDocs/submissions/submission-summary.csv
+  703  history > proDocs/submission/commands.txt
+  704  history > profDocs/submission/commands.txt
+  705  history > profDocs/submissions/commands.txt
+  706  cat profDocs/submissions/commands.txt
+  707  date -r profDocs/submissions/submission-summary.csv "+%m-%d-%Y"
+  708  date -r profDocs/submissions/submission-summary.csv "+%Y-%m-%d"
+  709  echo " , company, role, submitted, on, status, updated on" > profDocs/submissions/submission-summary.csv;counter=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}")", "$(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}")", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$(date -r $folder"/DiStasioLuca-cover.pdf" "+%Y-%m-%d");else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$(date -r $folder"/declined.txt" "+%Y-%m-%d";elif [ -f $folder"/interview.txt" ];then echo "interview, "$(date -r $folder"/interview.txt" "+%Y-%m-%d";else echo "pending, ";fi) >> profDocs/submissions/submission-summary.csv;done
+  710  echo " , company, role, submitted, on, status, updated on" > profDocs/submissions/submission-summary.csv;counter=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}")", "$(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}")", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$(date -r $folder"/DiStasioLuca-cover.pdf" "+%Y-%m-%d");else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$(date -r $folder"/declined.txt" "+%Y-%m-%d");elif [ -f $folder"/interview.txt" ];then echo "interview, "$(date -r $folder"/interview.txt" "+%Y-%m-%d");else echo "pending, ";fi) >> profDocs/submissions/submission-summary.csv;done
+  711  cat profDocs/submissions/submission-summary.csv
+  712  date -r profDocs/submissions/submission-summary.csv "+%Y-%m-%d"
+  713  date -r profDocs/submissions/wattsuppower_mechanical-engineer.pdf "+%Y-%m-%d"
+  714  date -r profDocs/submissions/wattsuppower_mechanical-engineer/DiStasioLuca-cover.pdf "+%Y-%m-%d"
+  715  date -r profDocs/submissions/wattsuppower_mechanical-engineer/DiStasioLuca-cove.pdf "+%Y-%m-%d"
+  716  echo " , company, role, submitted, on, status, updated on" > profDocs/submissions/submission-summary.csv;counter=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}")", "$(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}")", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$(date -r $folder"/DiStasioLuca-cover.pdf" "+%Y-%m-%d");else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$(date -r $folder"/declined.txt" "+%Y-%m-%d");elif [ -f $folder"/interview.txt" ];then echo "interview, "$(date -r $folder"/interview.txt" "+%Y-%m-%d");else echo "pending, ";fi) >> profDocs/submissions/submission-summary.csv;done
+  717  history > profDocs/submissions/commands.txt
+  718  cat profDocs/submissions/submission-summary.csv
+  719  echo " , company, role, submitted, on, status, updated on" > profDocs/submission-summary.csv;counter=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}")", "$(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}")", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$(date -r $folder"/DiStasioLuca-cover.pdf" "+%Y-%m-%d");else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$(date -r $folder"/declined.txt" "+%Y-%m-%d");elif [ -f $folder"/interview.txt" ];then echo "interview, "$(date -r $folder"/interview.txt" "+%Y-%m-%d");else echo "pending, ";fi) >> profDocs/submission-summary.csv;done
+  720  history > profDocs/commands.txt
+  721  cat profDocs/submission-summary.csv
+  722  foo=bar;echo "${foo^}"
+  723  foo=bar;echo "${foo~}"
+  724  echo " , company, role, submitted, on, status, updated on" > profDocs/submission-summary.csv;counter=0;for folder in profDocs/submissions/*;do echo $((++counter))", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[0]}") | tr '-' ' ')", "$(echo $(IFS='_' read -r -a array <<< "$(IFS='/' read -r -a array <<< "$folder" && echo "${array[2]}")" && echo "${array[1]}") | tr '-' ' ')", "$(if [ -f $folder"/submitted.txt" ];then echo "yes, "$(date -r $folder"/DiStasioLuca-cover.pdf" "+%Y-%m-%d");else echo "no, ";fi)", "$(if [ -f $folder"/declined.txt" ];then echo "declined, "$(date -r $folder"/declined.txt" "+%Y-%m-%d");elif [ -f $folder"/interview.txt" ];then echo "interview, "$(date -r $folder"/interview.txt" "+%Y-%m-%d");else echo "pending, ";fi) >> profDocs/submission-summary.csv;done
+  725  history > profDocs/commands.txt
