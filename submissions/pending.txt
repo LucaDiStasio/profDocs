@@ -3,12 +3,12 @@ King Fahd University of Petroleum & Minerals, SA, Assistant / Associate / Full P
 Aarhus University, DK, Postdoc in network-inspired models of heterogeneous materials, https://www.nature.com/naturecareers/job/postdoc-in-networkinspired-models-of-heterogeneous-materials-aarhus-university-au-763330, 2022-10-15
 Syracuse University, USA, Assistant Professor- Solid Mechanics, https://www.sujobopps.com/postings/94961, 2022-10-15
 Ghent University, BE, Postdoc vacancy on computational mechanics of thick adhesive joints in large wind turbine blades, https://composites.ugent.be/PhD_job_vacancies_PhD_job_positions_composites.html, 
-Technology Innovation Institute, UAE, Senior Researcher, https://imechanica.org/node/26244,
+Copenaghen University, DK, Postdoc in computational fluid and solid mechanics, https://jobportal.ku.dk/videnskabelige-stillinger/?show=157437, 2022-11-01
 University of Southern Denmark, DK, Postdoc Position in Soft Robotic Locomotion Control and Learning, https://www.sdu.dk/en/service/ledige_stillinger/1195449, 2022-10-15
 Georgia Tech, USA, Multi Rank Tenured/Tenure-Track Faculty Positions, https://careers.hprod.onehcm.usg.edu/psc/careers/CAREERS/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U, 2022-10-17
 Colorado School of Mines, USA, Assistant Professor Mechanical Engineering Biomechanics, https://jobs.mines.edu/cw/en-us/job/495861/assistant-professor-mechanical-engineering-biomechanics, 2022-10-21
 UC San Diego, USA, Assistant Professor in Aerospace Engineering, https://apol-recruit.ucsd.edu/JPF03339, 2022-10-14
-UC San Diego, USA, Assistant Teaching Professor (LPSOE) in Aerospace Engineering, Assistant Teaching Professor (LPSOE) in Aerospace Engineering, 2022-10-14
+UC San Diego, USA, Assistant Teaching Professor (LPSOE) in Aerospace Engineering, https://apol-recruit.ucsd.edu/JPF03342, 2022-10-14
 Purdue University, USA, Assistant or Associate Professor of Mechanical Engineering - Biomechanics, https://careers.purdue.edu/job/West-Lafayette-Assistant-or-Associate-Professor-of-Mechanical-Engineering-Biomechanics-IN-47906/932366300/, 2022-12-01
 University of Exeter, UK, Lectureship with initial Research Fellowship in Materials Modelling and Simulation, https://jobs.exeter.ac.uk/hrpr_webrecruitment/wrd/run/ETREC107GF.open?VACANCY_ID=448681b4fm&WVID=3817591jNg&LANG=USA, 2022-11-06
 University of Nottingham, UK, Nottingham Research Fellowships 2023, https://www.nottingham.ac.uk/jobs/currentvacancies/ref/NARF2023, 2022-10-06
@@ -29,4 +29,5 @@ Julia Computing, Remote, Scientific Application Developer, https://jobs.juliacom
 Novo Nordisk, DK, Senior R&D Engineer, https://careers.novonordisk.com/job/Hillerød-Senior-R&D-Engineer-Capi/854804001/, 2022-10-31
 Novo Nordisk, DK, Research Data Steward, https://careers.novonordisk.com/job/Måløv-Research-Data-Steward-Capi/850472801/, 2022-10-09
 Carpentries, Remote, Executive Council, https://docs.google.com/forms/d/e/1FAIpQLSdMTiM5bjmF7Tq90BifM41eVWSlLL6tbD6eqKmtl8tAWkP23g/viewform, 2022-10-17
+GEA Group, DK, Modelling and Simulation Engineer, https://www.linkedin.com/jobs/view/3262811221/?trackingId=rGmEGliTSaKJdb%2FiVLTfag%3D%3D&refId=RT0Fo3wlTe%2Bggjk7Ao4Y2g%3D%3D&midToken=AQGW6lN0ZhE6Zw&midSig=0E0imEMinKqWs1&trk=eml-jobs_jymbii_digest-job_card-0-jobcard_body&trkEmail=eml-jobs_jymbii_digest-job_card-0-jobcard_body-null-242drh~l8vf3jx0~vj-null-null&eid=242drh-l8vf3jx0-vj, 
  
